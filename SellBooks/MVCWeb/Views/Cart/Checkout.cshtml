@@ -1,0 +1,90 @@
+﻿@* sipariş verme sayfası
+ *@
+
+@model CartsDto
+
+<form method="post">
+    <input asp-for="CartHead.UserId" hidden />
+    <input asp-for="CartHead.CartHeadId" hidden />
+    <input asp-for="CartHead.CartTotal" hidden />
+
+    <div class="border mt-2 p-4 rounded">
+        <div class="container row">
+            <div class="col-md-7 col-12">
+                <span style="font-size:25px;" class="text-warning mb-2">Order Summary</span>
+            </div>
+            <div class="col-md-5 col-12">
+                <a asp-action="CartIndex" class="btn btn-outline-warning form-control">Back to Cart</a>
+            </div>
+            <br /><br /><br />
+            <hr />
+            <div class="col-7">
+                <div class="row pt-2">
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHead.Address" placeholder="Address..." class="form-control" />
+                        <span asp-validation-for="CartHead.Address" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <div class=" d-none d-lg-block">
+                            <div class="row text-danger">
+                                <div class="col-6">
+                                    Product Details
+                                </div>
+
+                                <div class="col-3">
+                                    Price
+                                </div>
+                                <div class="col-3">
+                                    Count
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        @foreach (var cartObj in Model.CartDetail)
+                        {
+                            <div class="row h-100">
+                                <div class="col-6">
+                                    <span style="font-size:20px">@cartObj.Product.ProductTitle</span>
+                                </div>
+
+                                <div class="col-3" style="font-size:11px;">
+                                    <span style="font-size:17px;"> @cartObj.Product.ProductPrice.ToString("C", new System.Globalization.CultureInfo("tr-TR"))</span>
+
+                                </div>
+                                <div class="col-3" style="font-size:11px;">
+                                    <span style="font-size:17px;"> @cartObj.Count</span>
+                                </div>
+                            </div>
+                            <hr />
+                        }
+                        <div class="row">
+                            <div class="row">
+                                <span class="col-12 text-center pr-4 text-danger" style="font-size: 21px;">Order Total: @Model.CartHead.CartTotal.ToString("C", new System.Globalization.CultureInfo("tr-TR"))</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+
+                            <div class="col-12 ">
+                                <button type="submit" class="btn btn-success form-control ">
+                                    <span>Sipariş Ver</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

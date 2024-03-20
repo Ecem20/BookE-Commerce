@@ -1,0 +1,66 @@
+OrderAPI | 2024-03-12 22:22:29.081 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-12 22:22:29.182 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-12 22:22:29.221 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-12 22:22:29.242 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-12 22:22:29.403 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-12 22:22:29.404 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-12 22:22:29.404 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-12 22:22:29.417 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-12 22:22:29.726 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-12 22:22:29.751 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-12 22:22:30.224 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeaders] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-12 22:22:30.475 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeaderId], [t].[Address], [t].[OrderTotal], [t].[Status], [t].[UserEmail], [t].[UserId], [o0].[OrderDetailsId], [o0].[BookId], [o0].[BookName], [o0].[Count], [o0].[OrderHeaderId], [o0].[Price]
+FROM (
+    SELECT [o].[OrderHeaderId], [o].[Address], [o].[OrderTotal], [o].[Status], [o].[UserEmail], [o].[UserId]
+    FROM [orderHeaders] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeaderId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetails] AS [o0] ON [t].[OrderHeaderId] = [o0].[OrderHeaderId]
+ORDER BY [t].[OrderHeaderId] DESC
+OrderAPI | 2024-03-12 22:22:30.599 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-12 22:22:30.676 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 922.0865ms
+OrderAPI | 2024-03-12 22:22:30.677 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-12 22:22:30.684 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 1274.2452ms
+OrderAPI | 2024-03-12 23:06:58.955 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-12 23:06:59.050 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-12 23:06:59.108 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-12 23:06:59.132 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-12 23:06:59.347 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-12 23:06:59.348 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-12 23:06:59.348 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-12 23:06:59.362 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-12 23:06:59.624 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-12 23:06:59.651 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-12 23:07:00.328 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeaderId], [t].[Address], [t].[OrderTotal], [t].[Status], [t].[UserEmail], [t].[UserId], [o0].[OrderDetailsId], [o0].[BookId], [o0].[BookName], [o0].[Count], [o0].[OrderHeaderId], [o0].[Price]
+FROM (
+    SELECT [o].[OrderHeaderId], [o].[Address], [o].[OrderTotal], [o].[Status], [o].[UserEmail], [o].[UserId]
+    FROM [orderHeaders] AS [o]
+    ORDER BY [o].[OrderHeaderId] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetails] AS [o0] ON [t].[OrderHeaderId] = [o0].[OrderHeaderId]
+ORDER BY [t].[OrderHeaderId] DESC
+OrderAPI | 2024-03-12 23:07:00.517 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeaders] AS [o]
+OrderAPI | 2024-03-12 23:07:00.537 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-12 23:07:00.628 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 973.1033ms
+OrderAPI | 2024-03-12 23:07:00.628 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-12 23:07:00.641 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 1285.1357ms

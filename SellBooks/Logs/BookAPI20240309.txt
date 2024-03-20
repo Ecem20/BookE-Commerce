@@ -1,0 +1,781 @@
+BookAPI | 2024-03-09 00:08:21.755 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 00:08:22.043 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 00:08:22.071 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 00:08:22.119 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 00:08:22.147 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 00:08:22.357 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 00:08:22.358 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 00:08:22.358 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 00:08:22.378 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:08:22.564 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:22.586 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:08:22.955 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:08:23.086 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:08:23.159 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 568.4176ms
+BookAPI | 2024-03-09 00:08:23.160 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:23.171 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 803.3268ms
+BookAPI | 2024-03-09 00:08:51.584 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:08:51.699 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:51.700 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:08:51.843 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:08:51.851 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:08:51.868 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 168.1643ms
+BookAPI | 2024-03-09 00:08:51.868 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:51.869 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 285.2741ms
+BookAPI | 2024-03-09 00:08:55.022 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:08:55.026 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:55.028 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:08:55.041 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:08:55.055 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:08:55.059 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 31.2635ms
+BookAPI | 2024-03-09 00:08:55.060 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:55.060 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 37.8179ms
+BookAPI | 2024-03-09 00:08:57.656 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:08:57.657 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:57.657 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:08:57.659 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:08:57.660 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:08:57.660 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 3.3491ms
+BookAPI | 2024-03-09 00:08:57.660 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:08:57.660 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 4.9826ms
+BookAPI | 2024-03-09 00:09:18.689 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category/0 - null null
+BookAPI | 2024-03-09 00:09:18.696 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:09:18.701 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:09:18.768 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:09:18.800 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:09:18.800 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 99.1698ms
+BookAPI | 2024-03-09 00:09:18.800 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:09:18.801 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category/0 - 200 null application/json; charset=utf-8 111.9569ms
+BookAPI | 2024-03-09 00:09:30.987 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:09:30.988 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:09:30.989 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:09:30.992 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:09:30.992 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:09:30.993 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 4.2235ms
+BookAPI | 2024-03-09 00:09:30.993 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:09:30.993 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 5.8139ms
+BookAPI | 2024-03-09 00:11:54.084 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 00:11:54.319 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 00:11:54.347 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 00:11:54.381 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 00:11:54.401 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 00:11:54.591 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 00:11:54.592 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 00:11:54.592 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 00:11:54.605 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:11:54.764 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:11:54.782 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:11:55.046 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:11:55.125 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:11:55.193 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 406.6177ms
+BookAPI | 2024-03-09 00:11:55.194 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:11:55.203 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 602.8236ms
+BookAPI | 2024-03-09 00:12:21.235 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:12:21.321 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:21.322 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:12:21.413 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:12:21.414 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:21.427 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 104.5992ms
+BookAPI | 2024-03-09 00:12:21.427 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:21.429 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 194.5256ms
+BookAPI | 2024-03-09 00:12:24.331 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:12:24.335 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:24.338 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:24.352 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:24.363 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:24.369 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 31.0842ms
+BookAPI | 2024-03-09 00:12:24.370 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:24.370 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 38.9015ms
+BookAPI | 2024-03-09 00:12:25.838 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:12:25.839 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:25.839 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:25.842 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:25.843 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:25.844 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 4.4819ms
+BookAPI | 2024-03-09 00:12:25.844 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:25.845 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 6.5966ms
+BookAPI | 2024-03-09 00:12:32.962 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category/18 - null null
+BookAPI | 2024-03-09 00:12:32.964 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:32.965 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:33.028 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:12:33.030 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:33.030 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 65.2102ms
+BookAPI | 2024-03-09 00:12:33.030 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:33.030 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category/18 - 200 null application/json; charset=utf-8 68.1144ms
+BookAPI | 2024-03-09 00:12:40.657 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:12:40.659 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:40.659 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:40.663 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:40.663 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:40.663 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 4.1211ms
+BookAPI | 2024-03-09 00:12:40.664 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:40.664 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 6.4188ms
+BookAPI | 2024-03-09 00:12:42.393 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:12:42.393 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:42.394 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:42.397 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:42.397 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:42.397 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 3.67ms
+BookAPI | 2024-03-09 00:12:42.397 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:42.398 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 4.9264ms
+BookAPI | 2024-03-09 00:12:47.792 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category/18 - null null
+BookAPI | 2024-03-09 00:12:47.794 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:47.795 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:47.798 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:12:47.799 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:47.799 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 4.7511ms
+BookAPI | 2024-03-09 00:12:47.799 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:47.800 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category/18 - 200 null application/json; charset=utf-8 7.9605ms
+BookAPI | 2024-03-09 00:12:49.320 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44386/api/category/18 - null null
+BookAPI | 2024-03-09 00:12:49.328 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Delete (BookAPI)'
+BookAPI | 2024-03-09 00:12:49.329 +03:00 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Delete(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:49.331 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:12:49.404 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [categories]
+OUTPUT 1
+WHERE [CategoryId] = @p0;
+BookAPI | 2024-03-09 00:12:49.411 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:49.412 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Delete (BookAPI) in 82.1694ms
+BookAPI | 2024-03-09 00:12:49.412 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Delete (BookAPI)'
+BookAPI | 2024-03-09 00:12:49.412 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44386/api/category/18 - 200 null application/json; charset=utf-8 91.3951ms
+BookAPI | 2024-03-09 00:12:49.428 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:12:49.429 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:49.429 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:49.431 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:49.431 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:49.431 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 2.2358ms
+BookAPI | 2024-03-09 00:12:49.431 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:49.431 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 3.2836ms
+BookAPI | 2024-03-09 00:12:51.700 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:12:51.701 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:51.701 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:12:51.702 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:12:51.702 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:12:51.703 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 1.8796ms
+BookAPI | 2024-03-09 00:12:51.703 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:12:51.703 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 2.9082ms
+BookAPI | 2024-03-09 00:13:01.575 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category/17 - null null
+BookAPI | 2024-03-09 00:13:01.577 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:01.577 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:01.580 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:13:01.580 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:01.581 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 3.7464ms
+BookAPI | 2024-03-09 00:13:01.581 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:01.581 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category/17 - 200 null application/json; charset=utf-8 6.2695ms
+BookAPI | 2024-03-09 00:13:12.795 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:13:12.796 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:12.796 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:12.797 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:13:12.798 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:12.798 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 2.4611ms
+BookAPI | 2024-03-09 00:13:12.798 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:12.798 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 3.5438ms
+BookAPI | 2024-03-09 00:13:15.370 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:13:15.370 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:15.370 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:15.372 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:13:15.372 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:15.373 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 2.7933ms
+BookAPI | 2024-03-09 00:13:15.373 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:15.373 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 3.7873ms
+BookAPI | 2024-03-09 00:13:22.018 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category/17 - null null
+BookAPI | 2024-03-09 00:13:22.019 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:22.019 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:22.021 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+WHERE [c].[CategoryId] = @__id_0
+BookAPI | 2024-03-09 00:13:22.021 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:22.021 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 2.5393ms
+BookAPI | 2024-03-09 00:13:22.021 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:22.021 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category/17 - 200 null application/json; charset=utf-8 4.2743ms
+BookAPI | 2024-03-09 00:13:26.867 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44386/api/category/Update - application/json; charset=utf-8 47
+BookAPI | 2024-03-09 00:13:26.868 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:13:26.870 +03:00 [INF] Route matched with {action = "Put", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Put(BookAPI.Models.Dto.CategoriesDto) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:26.900 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [categories] SET [CategoryName] = @p0
+OUTPUT 1
+WHERE [CategoryId] = @p1;
+BookAPI | 2024-03-09 00:13:26.900 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:26.901 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Put (BookAPI) in 31.0096ms
+BookAPI | 2024-03-09 00:13:26.901 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:13:26.901 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44386/api/category/Update - 200 null application/json; charset=utf-8 33.9163ms
+BookAPI | 2024-03-09 00:13:26.917 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:13:26.917 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:26.917 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:26.919 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:13:26.919 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:26.920 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 2.3484ms
+BookAPI | 2024-03-09 00:13:26.920 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:26.920 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 3.254ms
+BookAPI | 2024-03-09 00:13:31.911 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - null null
+BookAPI | 2024-03-09 00:13:31.911 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:31.911 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.CategoryController (BookAPI).
+BookAPI | 2024-03-09 00:13:31.914 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName]
+FROM [categories] AS [c]
+BookAPI | 2024-03-09 00:13:31.914 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:13:31.915 +03:00 [INF] Executed action BookAPI.Controllers.CategoryController.Get (BookAPI) in 3.1193ms
+BookAPI | 2024-03-09 00:13:31.915 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.CategoryController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:13:31.915 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/category?pageSize=4&pageNumber=4 - 200 null application/json; charset=utf-8 6.4434ms
+BookAPI | 2024-03-09 00:16:08.701 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 00:16:08.898 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 00:16:08.925 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 00:16:08.947 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 00:16:08.963 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 00:16:09.106 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 00:16:09.106 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 00:16:09.106 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 00:16:09.122 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:16:09.268 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:16:09.284 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:16:09.525 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:16:09.599 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:16:09.644 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 357.3795ms
+BookAPI | 2024-03-09 00:16:09.644 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:16:09.650 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 537.3416ms
+BookAPI | 2024-03-09 00:16:42.838 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:16:42.974 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:16:42.975 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:16:43.119 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:16:43.122 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:16:43.131 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 155.8355ms
+BookAPI | 2024-03-09 00:16:43.131 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:16:43.131 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 293.6215ms
+BookAPI | 2024-03-09 00:17:11.648 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:17:11.651 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:11.652 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:11.657 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:17:11.658 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:11.658 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 6.579ms
+BookAPI | 2024-03-09 00:17:11.658 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:11.658 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 10.6569ms
+BookAPI | 2024-03-09 00:17:13.741 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/8 - null null
+BookAPI | 2024-03-09 00:17:13.742 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:13.745 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:13.821 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 00:17:13.823 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:13.824 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 79.1495ms
+BookAPI | 2024-03-09 00:17:13.824 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:13.824 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/8 - 200 null application/json; charset=utf-8 83.143ms
+BookAPI | 2024-03-09 00:17:15.483 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/8 - null null
+BookAPI | 2024-03-09 00:17:15.486 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:15.486 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:15.493 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 00:17:15.494 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:15.494 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 8.4285ms
+BookAPI | 2024-03-09 00:17:15.494 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:15.495 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/8 - 200 null application/json; charset=utf-8 11.7028ms
+BookAPI | 2024-03-09 00:17:16.005 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/8 - null null
+BookAPI | 2024-03-09 00:17:16.006 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:16.006 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:16.009 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 00:17:16.011 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:16.012 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 5.6762ms
+BookAPI | 2024-03-09 00:17:16.012 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:16.012 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/8 - 200 null application/json; charset=utf-8 7.7317ms
+BookAPI | 2024-03-09 00:17:16.739 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44386/api/book/Update - application/json; charset=utf-8 272
+BookAPI | 2024-03-09 00:17:16.740 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:17:16.744 +03:00 [INF] Route matched with {action = "Put", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Put(BookAPI.Models.Dto.BookDto) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:16.855 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__isbnNumber_0='?' (Size = 4000), @__bookId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[ISBNNo] = @__isbnNumber_0 AND [b].[BookId] <> @__bookId_1
+BookAPI | 2024-03-09 00:17:17.002 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [books] SET [Author] = @p0, [Category] = @p1, [ISBNNo] = @p2, [ImageURL] = @p3, [Price] = @p4, [Publisher] = @p5, [StockQuantity] = @p6, [Title] = @p7
+OUTPUT 1
+WHERE [BookId] = @p8;
+BookAPI | 2024-03-09 00:17:17.011 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:17.012 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Put (BookAPI) in 268.4563ms
+BookAPI | 2024-03-09 00:17:17.012 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:17:17.013 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44386/api/book/Update - 200 null application/json; charset=utf-8 273.6195ms
+BookAPI | 2024-03-09 00:17:17.051 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:17:17.052 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:17.052 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:17.054 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:17:17.055 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:17.055 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 3.0897ms
+BookAPI | 2024-03-09 00:17:17.055 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:17:17.056 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 4.3019ms
+BookAPI | 2024-03-09 00:17:19.923 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 00:17:19.924 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:17:19.925 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:17:19.928 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:17:19.931 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:17:19.932 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 6.3648ms
+BookAPI | 2024-03-09 00:17:19.932 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:17:19.932 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 9.0602ms
+BookAPI | 2024-03-09 00:19:00.572 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 00:19:00.772 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 00:19:00.794 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 00:19:00.816 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 00:19:00.830 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 00:19:01.001 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 00:19:01.002 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 00:19:01.002 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 00:19:01.026 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:19:01.175 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:19:01.190 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:19:01.430 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:19:01.497 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:19:01.552 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 357.9581ms
+BookAPI | 2024-03-09 00:19:01.552 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:19:01.559 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 539.2202ms
+BookAPI | 2024-03-09 00:19:52.583 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:19:52.674 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:19:52.674 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:19:52.744 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:19:52.746 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:19:52.753 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 78.4977ms
+BookAPI | 2024-03-09 00:19:52.753 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:19:52.754 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 171.4999ms
+BookAPI | 2024-03-09 00:20:00.868 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 00:20:00.872 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:20:00.874 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:20:00.884 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:20:00.891 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:20:00.892 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 17.0931ms
+BookAPI | 2024-03-09 00:20:00.892 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:20:00.892 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 23.7057ms
+BookAPI | 2024-03-09 00:21:37.666 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:21:37.667 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:21:37.667 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:21:37.673 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:21:37.698 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:21:37.698 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 30.8645ms
+BookAPI | 2024-03-09 00:21:37.698 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:21:37.699 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 33.064ms
+BookAPI | 2024-03-09 00:22:47.945 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 00:22:48.226 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 00:22:48.253 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 00:22:48.289 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 00:22:48.321 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 00:22:48.557 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 00:22:48.557 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 00:22:48.557 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 00:22:48.578 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:22:48.778 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:22:48.808 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:22:49.154 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:22:49.284 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:22:49.361 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 548.603ms
+BookAPI | 2024-03-09 00:22:49.362 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:22:49.369 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 802.3854ms
+BookAPI | 2024-03-09 00:23:23.109 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:23:23.229 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:23.229 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:23.336 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:23:23.339 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:23.348 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 118.1115ms
+BookAPI | 2024-03-09 00:23:23.348 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:23.349 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 239.6617ms
+BookAPI | 2024-03-09 00:23:27.317 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 00:23:27.323 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:27.324 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:27.331 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:23:27.332 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:27.332 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 8.7161ms
+BookAPI | 2024-03-09 00:23:27.333 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:27.333 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 15.7156ms
+BookAPI | 2024-03-09 00:23:37.890 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 00:23:37.891 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:23:37.895 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:37.898 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:23:37.905 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:37.906 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 10.8965ms
+BookAPI | 2024-03-09 00:23:37.906 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 00:23:37.906 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 17.0303ms
+BookAPI | 2024-03-09 00:23:44.766 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/8 - null null
+BookAPI | 2024-03-09 00:23:44.769 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:44.773 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:44.932 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 00:23:44.938 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:44.939 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 165.8518ms
+BookAPI | 2024-03-09 00:23:44.939 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:44.939 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/8 - 200 null application/json; charset=utf-8 173.0833ms
+BookAPI | 2024-03-09 00:23:44.969 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44386/api/book/Update - application/json; charset=utf-8 272
+BookAPI | 2024-03-09 00:23:44.970 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:23:44.972 +03:00 [INF] Route matched with {action = "Put", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Put(BookAPI.Models.Dto.BookDto) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:45.086 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__isbnNumber_0='?' (Size = 4000), @__bookId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[ISBNNo] = @__isbnNumber_0 AND [b].[BookId] <> @__bookId_1
+BookAPI | 2024-03-09 00:23:45.228 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [books] SET [Author] = @p0, [Category] = @p1, [ISBNNo] = @p2, [ImageURL] = @p3, [Price] = @p4, [Publisher] = @p5, [StockQuantity] = @p6, [Title] = @p7
+OUTPUT 1
+WHERE [BookId] = @p8;
+BookAPI | 2024-03-09 00:23:45.236 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:45.237 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Put (BookAPI) in 264.3654ms
+BookAPI | 2024-03-09 00:23:45.237 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 00:23:45.238 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44386/api/book/Update - 200 null application/json; charset=utf-8 268.264ms
+BookAPI | 2024-03-09 00:23:50.933 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:23:50.934 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:50.935 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:50.938 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:23:50.938 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:50.938 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 3.7711ms
+BookAPI | 2024-03-09 00:23:50.938 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:50.939 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 5.8081ms
+BookAPI | 2024-03-09 00:23:52.789 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 00:23:52.790 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:52.790 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 00:23:52.792 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 00:23:52.794 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 00:23:52.795 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 4.6277ms
+BookAPI | 2024-03-09 00:23:52.795 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 00:23:52.795 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 5.8854ms
+BookAPI | 2024-03-09 13:13:30.685 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Book'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+BookAPI | 2024-03-09 13:13:31.136 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+BookAPI | 2024-03-09 13:13:31.183 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+BookAPI | 2024-03-09 13:13:31.235 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+BookAPI | 2024-03-09 13:13:31.272 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+BookAPI | 2024-03-09 13:13:31.574 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+BookAPI | 2024-03-09 13:13:31.575 +03:00 [INF] Hosting environment: Development
+BookAPI | 2024-03-09 13:13:31.575 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\BookAPI
+BookAPI | 2024-03-09 13:13:31.617 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:13:32.156 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:13:32.198 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:13:32.777 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:13:32.932 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:13:33.018 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 814.5069ms
+BookAPI | 2024-03-09 13:13:33.019 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:13:33.029 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 1436.1656ms
+BookAPI | 2024-03-09 13:14:25.778 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 13:14:25.792 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:14:25.793 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:14:25.895 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:14:25.897 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:14:25.898 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 105.5035ms
+BookAPI | 2024-03-09 13:14:25.899 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:14:25.899 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 122.1087ms
+BookAPI | 2024-03-09 13:14:50.687 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:14:50.812 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:14:50.813 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:14:50.822 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:14:50.823 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:14:50.824 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 10.7261ms
+BookAPI | 2024-03-09 13:14:50.824 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:14:50.824 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 137.1037ms
+BookAPI | 2024-03-09 13:15:02.645 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 13:15:02.646 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:02.646 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:02.649 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:02.649 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:02.650 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 3.6344ms
+BookAPI | 2024-03-09 13:15:02.650 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:02.650 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 5.4281ms
+BookAPI | 2024-03-09 13:15:05.147 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/12 - null null
+BookAPI | 2024-03-09 13:15:05.150 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:05.154 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:05.311 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 13:15:05.318 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:05.318 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 164.0131ms
+BookAPI | 2024-03-09 13:15:05.319 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:05.319 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/12 - 200 null application/json; charset=utf-8 171.5552ms
+BookAPI | 2024-03-09 13:15:07.378 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/12 - null null
+BookAPI | 2024-03-09 13:15:07.381 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:07.381 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:07.395 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 13:15:07.396 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:07.396 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 15.3658ms
+BookAPI | 2024-03-09 13:15:07.396 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:07.397 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/12 - 200 null application/json; charset=utf-8 18.9524ms
+BookAPI | 2024-03-09 13:15:17.286 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/12 - null null
+BookAPI | 2024-03-09 13:15:17.286 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:17.286 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:17.294 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[BookId] = @__id_0
+BookAPI | 2024-03-09 13:15:17.295 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:17.295 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 9.056ms
+BookAPI | 2024-03-09 13:15:17.296 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:17.296 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/12 - 200 null application/json; charset=utf-8 10.4794ms
+BookAPI | 2024-03-09 13:15:18.467 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44386/api/book/Update - application/json; charset=utf-8 366
+BookAPI | 2024-03-09 13:15:18.468 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 13:15:18.470 +03:00 [INF] Route matched with {action = "Put", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Put(BookAPI.Models.Dto.BookDto) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:18.600 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__isbnNumber_0='?' (Size = 4000), @__bookId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+WHERE [b].[ISBNNo] = @__isbnNumber_0 AND [b].[BookId] <> @__bookId_1
+BookAPI | 2024-03-09 13:15:18.751 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [books] SET [Author] = @p0, [Category] = @p1, [ISBNNo] = @p2, [ImageURL] = @p3, [Price] = @p4, [Publisher] = @p5, [StockQuantity] = @p6, [Title] = @p7
+OUTPUT 1
+WHERE [BookId] = @p8;
+BookAPI | 2024-03-09 13:15:18.761 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:18.762 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Put (BookAPI) in 291.7734ms
+BookAPI | 2024-03-09 13:15:18.762 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Put (BookAPI)'
+BookAPI | 2024-03-09 13:15:18.763 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44386/api/book/Update - 200 null application/json; charset=utf-8 295.5603ms
+BookAPI | 2024-03-09 13:15:18.836 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:15:18.837 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:18.837 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:18.841 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:18.842 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:18.842 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 5.3608ms
+BookAPI | 2024-03-09 13:15:18.842 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:18.843 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 7.0737ms
+BookAPI | 2024-03-09 13:15:24.091 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 13:15:24.091 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:24.091 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:24.096 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:24.096 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:24.097 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 5.2318ms
+BookAPI | 2024-03-09 13:15:24.097 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:15:24.097 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 6.1658ms
+BookAPI | 2024-03-09 13:15:27.790 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 13:15:27.791 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:27.794 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:27.800 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:27.806 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:27.807 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 13.3047ms
+BookAPI | 2024-03-09 13:15:27.807 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:27.808 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 17.6813ms
+BookAPI | 2024-03-09 13:15:31.011 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 13:15:31.011 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:31.011 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:31.014 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:31.015 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:31.015 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 4.4187ms
+BookAPI | 2024-03-09 13:15:31.016 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:31.016 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 5.2201ms
+BookAPI | 2024-03-09 13:15:34.628 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book/getbooks - null null
+BookAPI | 2024-03-09 13:15:34.628 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:34.628 +03:00 [INF] Route matched with {action = "GetBooks", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto GetBooks() on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:15:34.634 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:15:34.634 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:15:34.635 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.GetBooks (BookAPI) in 6.8362ms
+BookAPI | 2024-03-09 13:15:34.635 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.GetBooks (BookAPI)'
+BookAPI | 2024-03-09 13:15:34.635 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book/getbooks - 200 null application/json; charset=utf-8 7.8009ms
+BookAPI | 2024-03-09 13:16:09.199 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:16:09.201 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:09.201 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:16:09.207 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:16:09.208 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:16:09.208 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 7.3272ms
+BookAPI | 2024-03-09 13:16:09.208 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:09.208 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 9.2848ms
+BookAPI | 2024-03-09 13:16:20.801 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:16:20.802 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:20.802 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:16:20.807 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:16:20.807 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:16:20.808 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 5.4788ms
+BookAPI | 2024-03-09 13:16:20.808 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:20.808 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 7.4963ms
+BookAPI | 2024-03-09 13:16:54.277 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:16:54.278 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:54.278 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:16:54.282 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:16:54.282 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:16:54.283 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 4.617ms
+BookAPI | 2024-03-09 13:16:54.283 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:16:54.283 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 6.0776ms
+BookAPI | 2024-03-09 13:17:00.339 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 13:17:00.340 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:00.340 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:17:00.345 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:17:00.346 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:17:00.347 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 6.9567ms
+BookAPI | 2024-03-09 13:17:00.347 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:00.347 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 8.3714ms
+BookAPI | 2024-03-09 13:17:23.628 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:17:23.629 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:23.629 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:17:23.633 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:17:23.634 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:17:23.635 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 5.3608ms
+BookAPI | 2024-03-09 13:17:23.635 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:23.635 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 7.302ms
+BookAPI | 2024-03-09 13:17:48.495 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 13:17:48.495 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:48.495 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:17:48.507 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:17:48.508 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:17:48.509 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 13.6003ms
+BookAPI | 2024-03-09 13:17:48.509 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:48.509 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 14.6423ms
+BookAPI | 2024-03-09 13:17:59.619 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - null null
+BookAPI | 2024-03-09 13:17:59.620 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:59.620 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 13:17:59.623 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 13:17:59.623 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 13:17:59.624 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 4.0047ms
+BookAPI | 2024-03-09 13:17:59.624 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 13:17:59.624 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=2 - 200 null application/json; charset=utf-8 5.5106ms
+BookAPI | 2024-03-09 14:13:52.035 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - null null
+BookAPI | 2024-03-09 14:13:52.043 +03:00 [INF] Executing endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 14:13:52.044 +03:00 [INF] Route matched with {action = "Get", controller = "BookAPI"}. Executing controller action with signature BookAPI.Models.Dto.ResponseDto Get(Int32, Int32) on controller BookAPI.Controllers.BookAPIController (BookAPI).
+BookAPI | 2024-03-09 14:13:52.078 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookId], [b].[Author], [b].[Category], [b].[ISBNNo], [b].[ImageURL], [b].[Price], [b].[Publisher], [b].[StockQuantity], [b].[Title]
+FROM [books] AS [b]
+BookAPI | 2024-03-09 14:13:52.079 +03:00 [INF] Executing ObjectResult, writing value of type 'BookAPI.Models.Dto.ResponseDto'.
+BookAPI | 2024-03-09 14:13:52.082 +03:00 [INF] Executed action BookAPI.Controllers.BookAPIController.Get (BookAPI) in 37.5915ms
+BookAPI | 2024-03-09 14:13:52.082 +03:00 [INF] Executed endpoint 'BookAPI.Controllers.BookAPIController.Get (BookAPI)'
+BookAPI | 2024-03-09 14:13:52.082 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44386/api/book?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 53.4559ms

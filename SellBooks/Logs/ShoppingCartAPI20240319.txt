@@ -1,0 +1,631 @@
+ShoppingCartAPI | 2024-03-19 16:22:57.168 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 16:22:57.385 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 16:22:57.481 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 16:22:57.525 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 16:22:57.874 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 16:22:57.874 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 16:22:57.875 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 16:22:57.910 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 16:22:59.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1980.287ms
+ShoppingCartAPI | 2024-03-19 16:22:59.968 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 16:22:59.995 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 17.7568ms
+ShoppingCartAPI | 2024-03-19 16:22:59.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 16:23:00.475 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 478.7674ms
+ShoppingCartAPI | 2024-03-19 16:23:00.908 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 16:23:01.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 506.8198ms
+ShoppingCartAPI | 2024-03-19 16:32:20.619 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 16:32:20.793 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 16:32:20.911 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 16:32:20.953 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 16:32:21.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 16:32:21.409 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 16:32:21.409 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 16:32:21.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 16:32:22.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 805.953ms
+ShoppingCartAPI | 2024-03-19 16:32:22.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 16:32:22.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 91.51ms
+ShoppingCartAPI | 2024-03-19 16:32:22.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 16:32:23.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 928.617ms
+ShoppingCartAPI | 2024-03-19 16:32:24.203 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 16:32:24.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 467.8248ms
+ShoppingCartAPI | 2024-03-19 16:49:25.792 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 16:49:26.061 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 16:49:26.419 +03:00 [INF] Executed DbCommand (250ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 16:49:26.464 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 16:49:27.568 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 16:49:27.568 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 16:49:27.569 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 16:49:27.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 16:49:28.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 583.3733ms
+ShoppingCartAPI | 2024-03-19 16:49:28.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 16:49:28.448 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 56.1798ms
+ShoppingCartAPI | 2024-03-19 16:49:28.448 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 16:49:28.577 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.5713ms
+ShoppingCartAPI | 2024-03-19 16:49:28.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 16:49:28.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.5257ms
+ShoppingCartAPI | 2024-03-19 16:51:00.590 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 16:51:00.825 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 16:51:00.857 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 16:51:01.412 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 16:51:01.439 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 16:51:01.456 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 593.0118ms
+ShoppingCartAPI | 2024-03-19 16:51:01.456 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 16:51:01.464 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 874.4479ms
+ShoppingCartAPI | 2024-03-19 16:57:13.451 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 16:57:13.596 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 16:57:13.982 +03:00 [INF] Executed DbCommand (305ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 16:57:14.066 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 16:57:15.574 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 16:57:15.575 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 16:57:15.575 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 16:57:15.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 16:57:16.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1022.0372ms
+ShoppingCartAPI | 2024-03-19 16:57:16.811 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 16:57:16.836 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 20.4231ms
+ShoppingCartAPI | 2024-03-19 16:57:16.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 16:57:17.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 414.4352ms
+ShoppingCartAPI | 2024-03-19 16:57:17.491 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 16:57:18.003 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 512.0357ms
+ShoppingCartAPI | 2024-03-19 16:58:09.962 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 16:58:10.073 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 16:58:10.093 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 16:58:10.461 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 16:58:10.486 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 16:58:10.496 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 399.464ms
+ShoppingCartAPI | 2024-03-19 16:58:10.497 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 16:58:10.505 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 543.4646ms
+ShoppingCartAPI | 2024-03-19 17:02:08.140 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 17:02:08.148 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 17:02:08.149 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 17:02:08.196 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 17:02:08.197 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 17:02:08.198 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 48.8812ms
+ShoppingCartAPI | 2024-03-19 17:02:08.198 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 17:02:08.198 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 58.1269ms
+ShoppingCartAPI | 2024-03-19 21:27:23.403 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 21:27:23.537 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 21:27:23.607 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 21:27:23.635 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 21:27:23.938 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 21:27:23.939 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 21:27:23.939 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 21:27:23.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 21:27:24.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 776.4138ms
+ShoppingCartAPI | 2024-03-19 21:27:24.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 21:27:24.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 21:27:24.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 50.2884ms
+ShoppingCartAPI | 2024-03-19 21:27:25.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 357.8818ms
+ShoppingCartAPI | 2024-03-19 21:27:25.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 21:27:25.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 311.6391ms
+ShoppingCartAPI | 2024-03-19 21:54:06.106 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 21:54:06.296 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 21:54:06.364 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 21:54:06.398 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 21:54:07.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 21:54:07.027 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 21:54:07.027 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 21:54:07.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 21:54:09.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 2128.2835ms
+ShoppingCartAPI | 2024-03-19 21:54:09.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 21:54:09.689 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 21:54:09.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.0833ms
+ShoppingCartAPI | 2024-03-19 21:54:09.837 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 288.8143ms
+ShoppingCartAPI | 2024-03-19 21:54:09.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 21:54:10.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 567.9593ms
+ShoppingCartAPI | 2024-03-19 21:58:06.735 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-03-19 21:58:06.993 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 21:58:07.019 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 21:58:07.413 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 21:58:07.474 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 21:58:07.485 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 461.298ms
+ShoppingCartAPI | 2024-03-19 21:58:07.485 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 21:58:07.493 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 757.9244ms
+ShoppingCartAPI | 2024-03-19 22:12:14.762 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:12:14.976 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:12:15.051 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:12:15.092 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:12:16.210 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:12:16.212 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:12:16.212 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:12:16.355 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:12:18.005 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1669.2253ms
+ShoppingCartAPI | 2024-03-19 22:12:18.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:12:18.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:12:18.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.1842ms
+ShoppingCartAPI | 2024-03-19 22:12:18.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 274.0597ms
+ShoppingCartAPI | 2024-03-19 22:12:18.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:12:19.462 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 572.7652ms
+ShoppingCartAPI | 2024-03-19 22:16:19.803 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:16:19.981 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:16:20.115 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:16:20.152 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:16:20.600 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:16:20.602 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:16:20.602 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:16:20.644 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:16:23.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 2837.4929ms
+ShoppingCartAPI | 2024-03-19 22:16:23.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:16:23.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:16:24.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 38.3293ms
+ShoppingCartAPI | 2024-03-19 22:16:24.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 267.0512ms
+ShoppingCartAPI | 2024-03-19 22:16:24.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:16:24.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 455.6167ms
+ShoppingCartAPI | 2024-03-19 22:23:05.786 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - application/json; charset=utf-8 248
+ShoppingCartAPI | 2024-03-19 22:23:05.943 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:05.956 +03:00 [INF] Route matched with {action = "CartUpsert", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] CartUpsert(ShoppingCartAPI.Models.Dto.CartsDto) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:23:06.040 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/17
+ShoppingCartAPI | 2024-03-19 22:23:06.041 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/17
+ShoppingCartAPI | 2024-03-19 22:23:06.123 +03:00 [INF] Received HTTP response headers after 79.9122ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:06.123 +03:00 [INF] End processing HTTP request after 86.204ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:06.473 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__8__locals1_cartsDTO_CartHead_UserId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__8__locals1_cartsDTO_CartHead_UserId_0
+ShoppingCartAPI | 2024-03-19 22:23:06.621 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [cartHeads] ([Email], [UserId])
+OUTPUT INSERTED.[CartHeadId]
+VALUES (@p0, @p1);
+ShoppingCartAPI | 2024-03-19 22:23:06.707 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [cartDetail] ([CartHeadId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailId]
+VALUES (@p0, @p1, @p2);
+ShoppingCartAPI | 2024-03-19 22:23:06.732 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-03-19 22:23:06.732 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-03-19 22:23:07.021 +03:00 [INF] Received HTTP response headers after 288.9831ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:07.021 +03:00 [INF] End processing HTTP request after 289.4314ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:07.031 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:23:07.051 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI) in 1090.9205ms
+ShoppingCartAPI | 2024-03-19 22:23:07.052 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:07.058 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - 200 null application/json; charset=utf-8 1273.3333ms
+ShoppingCartAPI | 2024-03-19 22:23:13.946 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-03-19 22:23:13.950 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:13.954 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:23:14.047 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:23:14.076 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-03-19 22:23:14.078 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:23:14.078 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:23:14.086 +03:00 [INF] Received HTTP response headers after 8.0718ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:14.087 +03:00 [INF] End processing HTTP request after 8.3961ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:14.095 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:23:14.098 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 144.4974ms
+ShoppingCartAPI | 2024-03-19 22:23:14.098 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:14.099 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 152.5001ms
+ShoppingCartAPI | 2024-03-19 22:23:16.239 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-03-19 22:23:16.245 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:16.245 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:23:16.256 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:23:16.258 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-03-19 22:23:16.260 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:23:16.261 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:23:16.265 +03:00 [INF] Received HTTP response headers after 4.2018ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:16.265 +03:00 [INF] End processing HTTP request after 4.7395ms - 200
+ShoppingCartAPI | 2024-03-19 22:23:16.267 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:23:16.268 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 23.0094ms
+ShoppingCartAPI | 2024-03-19 22:23:16.268 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:23:16.269 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 30.0994ms
+ShoppingCartAPI | 2024-03-19 22:24:16.231 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-03-19 22:24:16.235 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:24:16.235 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:24:16.239 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:24:16.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-03-19 22:24:16.243 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:24:16.243 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/getbooks
+ShoppingCartAPI | 2024-03-19 22:24:16.254 +03:00 [INF] Received HTTP response headers after 10.5859ms - 200
+ShoppingCartAPI | 2024-03-19 22:24:16.254 +03:00 [INF] End processing HTTP request after 10.8683ms - 200
+ShoppingCartAPI | 2024-03-19 22:24:16.255 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:24:16.255 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 19.8343ms
+ShoppingCartAPI | 2024-03-19 22:24:16.255 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:24:16.256 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 25.3999ms
+ShoppingCartAPI | 2024-03-19 22:30:48.050 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:30:48.455 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:30:48.860 +03:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:30:48.924 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:30:49.653 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:30:49.654 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:30:49.654 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:30:49.685 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:30:50.239 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 568.1144ms
+ShoppingCartAPI | 2024-03-19 22:30:50.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:30:50.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.6204ms
+ShoppingCartAPI | 2024-03-19 22:30:50.648 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:30:51.051 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 403.742ms
+ShoppingCartAPI | 2024-03-19 22:30:51.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:30:51.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.55ms
+ShoppingCartAPI | 2024-03-19 22:39:02.213 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:39:02.340 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:39:02.460 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:39:02.502 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:39:02.829 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:39:02.830 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:39:02.830 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:39:02.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:39:03.636 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 792.8194ms
+ShoppingCartAPI | 2024-03-19 22:39:04.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:39:04.091 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:39:04.091 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 101.4389ms
+ShoppingCartAPI | 2024-03-19 22:39:04.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 567.2769ms
+ShoppingCartAPI | 2024-03-19 22:39:04.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:39:04.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 244.2334ms
+ShoppingCartAPI | 2024-03-19 22:41:43.107 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:41:43.313 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:41:43.432 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:41:43.475 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:41:43.973 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:41:43.973 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:41:43.973 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:41:44.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:41:44.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 669.2926ms
+ShoppingCartAPI | 2024-03-19 22:41:44.811 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:41:44.824 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 3.9524ms
+ShoppingCartAPI | 2024-03-19 22:41:44.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:41:44.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.5415ms
+ShoppingCartAPI | 2024-03-19 22:41:45.016 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:41:45.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 189.7233ms
+ShoppingCartAPI | 2024-03-19 22:46:03.498 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:46:03.632 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:46:03.804 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:46:03.841 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:46:04.236 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:46:04.236 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:46:04.236 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:46:04.260 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:46:05.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 966.427ms
+ShoppingCartAPI | 2024-03-19 22:46:05.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:46:05.942 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:46:05.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 53.7303ms
+ShoppingCartAPI | 2024-03-19 22:46:06.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 296.613ms
+ShoppingCartAPI | 2024-03-19 22:46:06.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:46:06.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 210.5682ms
+ShoppingCartAPI | 2024-03-19 22:48:03.425 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:48:03.552 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:48:03.825 +03:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:48:03.868 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:48:04.638 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:48:04.639 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:48:04.639 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:48:04.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:48:05.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 547.3089ms
+ShoppingCartAPI | 2024-03-19 22:48:05.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:48:05.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:48:05.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 5.5612ms
+ShoppingCartAPI | 2024-03-19 22:48:05.487 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.3306ms
+ShoppingCartAPI | 2024-03-19 22:48:05.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:48:05.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.7953ms
+ShoppingCartAPI | 2024-03-19 22:52:17.452 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:52:17.687 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:52:17.875 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:52:17.913 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:52:18.271 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:52:18.271 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:52:18.271 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:52:18.299 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:52:19.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1163.5574ms
+ShoppingCartAPI | 2024-03-19 22:52:20.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:52:20.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 159.2872ms
+ShoppingCartAPI | 2024-03-19 22:52:20.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:52:20.401 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 183.8143ms
+ShoppingCartAPI | 2024-03-19 22:52:20.665 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:52:20.930 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 264.9615ms
+ShoppingCartAPI | 2024-03-19 22:55:43.562 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 22:55:43.714 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:55:43.733 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:55:44.084 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:55:44.108 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:55:44.117 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 380.2025ms
+ShoppingCartAPI | 2024-03-19 22:55:44.117 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:55:44.124 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 562.7556ms
+ShoppingCartAPI | 2024-03-19 22:57:38.168 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 22:57:38.348 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 22:57:38.420 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 22:57:38.457 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 22:57:38.744 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 22:57:38.744 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 22:57:38.745 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 22:57:38.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 22:57:39.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1051.5324ms
+ShoppingCartAPI | 2024-03-19 22:57:40.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 22:57:40.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 22:57:40.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 48.5583ms
+ShoppingCartAPI | 2024-03-19 22:57:40.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 276.4187ms
+ShoppingCartAPI | 2024-03-19 22:57:40.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 22:57:40.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 275.911ms
+ShoppingCartAPI | 2024-03-19 22:58:36.159 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 22:58:36.286 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:58:36.317 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:58:36.856 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:58:36.888 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:58:36.905 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 581.1926ms
+ShoppingCartAPI | 2024-03-19 22:58:36.906 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:58:36.912 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 753.5866ms
+ShoppingCartAPI | 2024-03-19 22:58:52.881 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 22:58:52.887 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:58:52.887 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:58:52.978 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:58:52.979 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:58:52.980 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 92.7002ms
+ShoppingCartAPI | 2024-03-19 22:58:52.980 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:58:52.980 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 100.1686ms
+ShoppingCartAPI | 2024-03-19 22:59:34.593 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 22:59:34.594 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:59:34.594 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 22:59:34.602 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 22:59:34.602 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 22:59:34.603 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 8.561ms
+ShoppingCartAPI | 2024-03-19 22:59:34.603 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 22:59:34.603 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 10.6762ms
+ShoppingCartAPI | 2024-03-19 23:00:10.590 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 23:00:10.591 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:00:10.591 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 23:00:10.602 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 23:00:10.603 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 23:00:10.603 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 12.3699ms
+ShoppingCartAPI | 2024-03-19 23:00:10.603 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:00:10.604 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 13.7281ms
+ShoppingCartAPI | 2024-03-19 23:02:33.647 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 23:02:33.921 +03:00 [INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 23:02:34.321 +03:00 [INF] Executed DbCommand (302ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 23:02:34.371 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 23:02:34.809 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 23:02:34.809 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 23:02:34.809 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 23:02:34.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 23:02:35.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 797.3192ms
+ShoppingCartAPI | 2024-03-19 23:02:35.716 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 23:02:35.725 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.0518ms
+ShoppingCartAPI | 2024-03-19 23:02:35.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 23:02:35.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 139.7471ms
+ShoppingCartAPI | 2024-03-19 23:02:36.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 23:02:36.491 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 314.2847ms
+ShoppingCartAPI | 2024-03-19 23:03:47.135 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 23:03:47.247 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:03:47.268 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 23:03:47.645 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 23:03:47.659 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 23:03:47.669 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 397.2394ms
+ShoppingCartAPI | 2024-03-19 23:03:47.670 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:03:47.675 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 540.9287ms
+ShoppingCartAPI | 2024-03-19 23:03:55.604 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 23:03:55.607 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:03:55.607 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 23:03:55.670 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 23:03:55.671 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 23:03:55.672 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 65.1502ms
+ShoppingCartAPI | 2024-03-19 23:03:55.672 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:03:55.673 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 68.8485ms
+ShoppingCartAPI | 2024-03-19 23:06:22.007 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 23:06:22.270 +03:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 23:06:22.493 +03:00 [INF] Executed DbCommand (122ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 23:06:22.523 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 23:06:23.102 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 23:06:23.103 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 23:06:23.103 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 23:06:23.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 23:06:23.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 403.9828ms
+ShoppingCartAPI | 2024-03-19 23:06:23.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 23:06:23.665 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 23:06:23.665 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 5.5801ms
+ShoppingCartAPI | 2024-03-19 23:06:23.737 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.8805ms
+ShoppingCartAPI | 2024-03-19 23:06:24.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 23:06:24.379 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.7971ms
+ShoppingCartAPI | 2024-03-19 23:06:47.181 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 23:06:47.284 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:06:47.300 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 23:06:47.626 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 23:06:47.644 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 23:06:47.652 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 349.5306ms
+ShoppingCartAPI | 2024-03-19 23:06:47.652 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:06:47.656 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 475.4395ms
+ShoppingCartAPI | 2024-03-19 23:09:22.264 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 23:09:22.500 +03:00 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 23:09:22.580 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 23:09:22.609 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 23:09:23.061 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 23:09:23.062 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 23:09:23.062 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 23:09:23.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 23:09:23.784 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 704.8101ms
+ShoppingCartAPI | 2024-03-19 23:09:23.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 23:09:23.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 6.2371ms
+ShoppingCartAPI | 2024-03-19 23:09:23.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 23:09:24.340 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 433.3195ms
+ShoppingCartAPI | 2024-03-19 23:09:24.624 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 23:09:24.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 349.4234ms
+ShoppingCartAPI | 2024-03-19 23:23:44.070 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 23:23:44.376 +03:00 [INF] Executed DbCommand (121ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 23:23:44.491 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 23:23:44.533 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 23:23:44.927 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 23:23:44.927 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 23:23:44.928 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 23:23:44.954 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 23:23:45.731 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 786.2625ms
+ShoppingCartAPI | 2024-03-19 23:23:45.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 23:23:45.943 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 38.8816ms
+ShoppingCartAPI | 2024-03-19 23:23:45.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 23:23:46.356 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 405.7473ms
+ShoppingCartAPI | 2024-03-19 23:23:46.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 23:23:46.993 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 352.9685ms
+ShoppingCartAPI | 2024-03-19 23:25:39.229 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - application/json; charset=utf-8 8
+ShoppingCartAPI | 2024-03-19 23:25:39.394 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:25:39.420 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-03-19 23:25:39.816 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-03-19 23:25:39.848 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-03-19 23:25:39.863 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 437.309ms
+ShoppingCartAPI | 2024-03-19 23:25:39.863 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-03-19 23:25:39.869 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/string - 200 null application/json; charset=utf-8 640.0547ms
+ShoppingCartAPI | 2024-03-19 23:27:51.315 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-03-19 23:27:51.536 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-03-19 23:27:51.668 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-03-19 23:27:51.718 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-03-19 23:27:52.198 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-03-19 23:27:52.199 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-03-19 23:27:52.199 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-03-19 23:27:52.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-03-19 23:27:53.535 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 1319.8811ms
+ShoppingCartAPI | 2024-03-19 23:27:54.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-03-19 23:27:54.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-03-19 23:27:54.731 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 519.4108ms
+ShoppingCartAPI | 2024-03-19 23:27:55.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 697.4662ms
+ShoppingCartAPI | 2024-03-19 23:27:55.813 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-03-19 23:27:56.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 290.5142ms
