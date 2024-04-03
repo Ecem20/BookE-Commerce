@@ -1,0 +1,349 @@
+EmailAPI | 2024-03-26 03:18:48.062 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 03:18:48.082 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 03:18:48.121 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 03:18:48.121 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 03:18:48.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 606.087ms
+EmailAPI | 2024-03-26 03:18:48.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 03:18:48.763 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 03:18:48.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 11.81ms
+EmailAPI | 2024-03-26 03:18:48.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.9048ms
+EmailAPI | 2024-03-26 03:18:48.923 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 03:18:49.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 173.017ms
+EmailAPI | 2024-03-26 03:20:16.386 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 126
+EmailAPI | 2024-03-26 03:20:16.391 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:20:16.407 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 03:20:17.455 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 03:20:17.562 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 03:20:17.569 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1159.1948ms
+EmailAPI | 2024-03-26 03:20:17.570 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:20:17.576 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 1190.1519ms
+EmailAPI | 2024-03-26 03:26:41.967 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44391/api/email/send - application/json 85
+EmailAPI | 2024-03-26 03:26:41.968 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:26:41.968 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 03:26:45.667 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 3698.5485ms
+EmailAPI | 2024-03-26 03:26:45.668 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:26:45.673 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, ParseAddressInfo& parsedAddress, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at EmailAPI.Controllers.EmailAPIController.SendEmail(EmailDto request) in C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI\Controllers\EmailAPIController.cs:line 25
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+EmailAPI | 2024-03-26 03:26:45.914 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44391/api/email/send - 500 null application/json; charset=utf-8 3947.6498ms
+EmailAPI | 2024-03-26 03:32:17.273 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 03:32:17.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 03:32:17.324 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 03:32:17.324 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 03:32:17.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 577.7211ms
+EmailAPI | 2024-03-26 03:32:17.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 03:32:17.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 03:32:17.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 16.1614ms
+EmailAPI | 2024-03-26 03:32:18.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.1297ms
+EmailAPI | 2024-03-26 03:32:18.287 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 03:32:18.406 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.7163ms
+EmailAPI | 2024-03-26 03:42:06.815 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 03:42:06.835 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 03:42:06.894 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 03:42:06.894 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 03:42:13.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 6597.0914ms
+EmailAPI | 2024-03-26 03:42:14.749 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 03:42:14.764 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 03:42:14.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 8.9053ms
+EmailAPI | 2024-03-26 03:42:27.628 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12864.644ms
+EmailAPI | 2024-03-26 03:42:27.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 03:42:27.825 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.0984ms
+EmailAPI | 2024-03-26 03:50:51.906 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 03:50:51.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 03:50:51.955 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 03:50:51.956 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 03:50:52.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 640.7869ms
+EmailAPI | 2024-03-26 03:50:52.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 03:50:52.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 03:50:52.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 5.7234ms
+EmailAPI | 2024-03-26 03:50:52.766 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.8652ms
+EmailAPI | 2024-03-26 03:50:52.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 03:50:53.055 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.0986ms
+EmailAPI | 2024-03-26 03:51:59.905 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 03:51:59.916 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:51:59.957 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 03:52:01.780 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 03:52:01.990 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 03:52:02.000 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 2037.3852ms
+EmailAPI | 2024-03-26 03:52:02.000 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:52:02.009 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 2104.7008ms
+EmailAPI | 2024-03-26 03:54:40.371 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 03:54:40.372 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:54:40.372 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 03:54:40.458 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 03:54:40.459 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 03:54:40.459 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 87.1786ms
+EmailAPI | 2024-03-26 03:54:40.460 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 03:54:40.460 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 89.1039ms
+EmailAPI | 2024-03-26 04:00:14.232 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 04:00:14.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 04:00:14.293 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 04:00:14.293 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 04:00:14.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 622.8224ms
+EmailAPI | 2024-03-26 04:00:14.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 04:00:14.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 04:00:14.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 22.4309ms
+EmailAPI | 2024-03-26 04:00:15.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.42ms
+EmailAPI | 2024-03-26 04:00:15.163 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 04:00:15.329 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.4785ms
+EmailAPI | 2024-03-26 04:01:40.435 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 04:01:40.449 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 04:01:40.476 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 04:01:42.164 +03:00 [INF] Executed DbCommand (69ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 04:01:42.360 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 04:01:42.371 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1888.6498ms
+EmailAPI | 2024-03-26 04:01:42.371 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 04:01:42.384 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 1950.3017ms
+EmailAPI | 2024-03-26 04:05:20.514 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 127
+EmailAPI | 2024-03-26 04:05:20.516 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 04:05:20.517 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 04:05:20.626 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 04:05:20.628 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 04:05:20.630 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 112.9112ms
+EmailAPI | 2024-03-26 04:05:20.630 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 04:05:20.631 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 117.2924ms
+EmailAPI | 2024-03-26 20:13:48.383 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 20:13:48.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 20:13:48.534 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 20:13:48.535 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 20:13:49.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1532.7857ms
+EmailAPI | 2024-03-26 20:14:04.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 20:14:04.412 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 20:14:04.458 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 13.5109ms
+EmailAPI | 2024-03-26 20:14:04.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.5618ms
+EmailAPI | 2024-03-26 20:14:04.681 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 20:14:04.912 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.0467ms
+EmailAPI | 2024-03-26 20:16:59.538 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 20:16:59.552 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 20:16:59.607 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 20:17:01.311 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 20:17:01.610 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 20:17:01.625 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 2007.0118ms
+EmailAPI | 2024-03-26 20:17:01.626 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 20:17:01.641 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 2103.3675ms
+EmailAPI | 2024-03-26 20:19:24.524 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 20:19:24.559 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 20:19:24.663 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 20:19:24.664 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 20:19:25.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1284.8796ms
+EmailAPI | 2024-03-26 20:19:26.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 20:19:26.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 20:19:26.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 17.1411ms
+EmailAPI | 2024-03-26 20:19:26.531 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 447.7996ms
+EmailAPI | 2024-03-26 20:19:26.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 20:19:26.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 268.5053ms
+EmailAPI | 2024-03-26 20:26:59.067 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 20:26:59.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 20:26:59.162 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 20:26:59.163 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 20:27:00.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1018.4858ms
+EmailAPI | 2024-03-26 20:27:00.245 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 20:27:00.273 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 20:27:00.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 5.3998ms
+EmailAPI | 2024-03-26 20:27:00.375 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.7508ms
+EmailAPI | 2024-03-26 20:27:00.555 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 20:27:00.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 320.628ms
+EmailAPI | 2024-03-26 20:28:44.008 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 20:28:44.034 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 20:28:44.122 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 20:28:45.792 +03:00 [INF] Executed DbCommand (84ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 20:28:46.068 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 20:28:46.083 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1951.0291ms
+EmailAPI | 2024-03-26 20:28:46.083 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 20:28:46.097 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 2089.887ms
+EmailAPI | 2024-03-26 20:35:07.422 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 20:35:07.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 20:35:07.573 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 20:35:07.573 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 20:35:08.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1482.4458ms
+EmailAPI | 2024-03-26 20:35:09.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 20:35:09.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 20:35:09.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 32.3284ms
+EmailAPI | 2024-03-26 20:35:09.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 250.9937ms
+EmailAPI | 2024-03-26 20:35:09.626 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 20:35:09.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 335.4964ms
+EmailAPI | 2024-03-26 20:58:15.784 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 20:58:15.813 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 20:58:15.903 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 20:58:15.904 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 20:58:29.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 13516.3967ms
+EmailAPI | 2024-03-26 20:58:30.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 20:58:30.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 20:58:30.516 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 161.8079ms
+EmailAPI | 2024-03-26 20:58:37.514 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 20:58:37.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7009.584ms
+EmailAPI | 2024-03-26 20:58:38.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 499.395ms
+EmailAPI | 2024-03-26 21:03:42.112 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:03:42.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:03:42.267 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:03:42.267 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:03:43.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1511.914ms
+EmailAPI | 2024-03-26 21:03:44.087 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:03:44.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 18.3664ms
+EmailAPI | 2024-03-26 21:03:44.205 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:03:44.422 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 217.5861ms
+EmailAPI | 2024-03-26 21:03:44.615 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:03:44.986 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 371.3415ms
+EmailAPI | 2024-03-26 21:11:11.611 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:11:11.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:11:11.658 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:11:11.659 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:11:12.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 533.7767ms
+EmailAPI | 2024-03-26 21:11:12.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:11:12.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:11:12.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 4.4927ms
+EmailAPI | 2024-03-26 21:11:12.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.1133ms
+EmailAPI | 2024-03-26 21:11:12.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:11:12.628 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.6534ms
+EmailAPI | 2024-03-26 21:13:19.283 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:13:19.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:13:19.391 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:13:19.408 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:13:20.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 1089.1599ms
+EmailAPI | 2024-03-26 21:13:20.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:13:20.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 42.0783ms
+EmailAPI | 2024-03-26 21:13:20.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:13:20.950 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 242.62ms
+EmailAPI | 2024-03-26 21:13:21.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:13:21.504 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 351.0225ms
+EmailAPI | 2024-03-26 21:20:42.440 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:20:42.460 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:20:42.551 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:20:42.551 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:20:43.305 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 858.6077ms
+EmailAPI | 2024-03-26 21:20:43.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:20:43.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:20:43.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 16.1446ms
+EmailAPI | 2024-03-26 21:20:43.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.8699ms
+EmailAPI | 2024-03-26 21:20:43.720 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:20:43.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.5256ms
+EmailAPI | 2024-03-26 21:22:04.259 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:22:04.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:22:04.350 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:22:04.350 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:22:05.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 834.1487ms
+EmailAPI | 2024-03-26 21:22:05.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:22:05.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:22:05.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 197.6931ms
+EmailAPI | 2024-03-26 21:22:05.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.1575ms
+EmailAPI | 2024-03-26 21:22:05.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:22:05.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.4197ms
+EmailAPI | 2024-03-26 21:26:25.185 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 186
+EmailAPI | 2024-03-26 21:26:25.192 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 21:26:25.204 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 21:26:26.235 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 21:26:26.354 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 21:26:26.360 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1151.684ms
+EmailAPI | 2024-03-26 21:26:26.360 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 21:26:26.369 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 1184.6353ms
+EmailAPI | 2024-03-26 21:30:54.456 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:30:54.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:30:54.529 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:30:54.529 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:30:55.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 810.9075ms
+EmailAPI | 2024-03-26 21:30:55.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:30:55.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 18.5621ms
+EmailAPI | 2024-03-26 21:30:55.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:30:55.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.1291ms
+EmailAPI | 2024-03-26 21:30:55.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:30:55.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 244.7436ms
+EmailAPI | 2024-03-26 21:44:54.950 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:44:54.982 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:44:55.042 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:44:55.042 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:44:55.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 964.1249ms
+EmailAPI | 2024-03-26 21:44:56.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:44:56.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:44:56.150 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 23.4307ms
+EmailAPI | 2024-03-26 21:44:56.347 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 199.7768ms
+EmailAPI | 2024-03-26 21:44:56.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:44:56.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 233.607ms
+EmailAPI | 2024-03-26 21:48:11.097 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:48:11.121 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-03-26 21:48:11.185 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:48:11.186 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:48:11.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 873.3618ms
+EmailAPI | 2024-03-26 21:48:12.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-03-26 21:48:12.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-03-26 21:48:12.187 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 14.5999ms
+EmailAPI | 2024-03-26 21:48:12.335 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 163.1202ms
+EmailAPI | 2024-03-26 21:48:12.450 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-03-26 21:48:12.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.7128ms
+EmailAPI | 2024-03-26 21:53:32.875 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-26 21:53:32.888 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 126
+EmailAPI | 2024-03-26 21:53:32.944 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-26 21:53:32.944 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-03-26 21:53:33.046 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 21:53:33.084 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-26 21:53:34.831 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-26 21:53:35.011 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-26 21:53:35.037 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1948.0639ms
+EmailAPI | 2024-03-26 21:53:35.038 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-26 21:53:35.049 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 2171.7454ms

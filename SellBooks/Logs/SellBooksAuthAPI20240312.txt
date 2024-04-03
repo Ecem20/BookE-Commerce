@@ -1,0 +1,164 @@
+SellBooksAuthService | 2024-03-12 22:22:10.429 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+SellBooksAuthService | 2024-03-12 22:22:10.525 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+SellBooksAuthService | 2024-03-12 22:22:10.559 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+SellBooksAuthService | 2024-03-12 22:22:10.594 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+SellBooksAuthService | 2024-03-12 22:22:10.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+SellBooksAuthService | 2024-03-12 22:22:10.807 +03:00 [INF] Hosting environment: Development
+SellBooksAuthService | 2024-03-12 22:22:10.807 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\AuthService
+SellBooksAuthService | 2024-03-12 22:22:10.898 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 61
+SellBooksAuthService | 2024-03-12 22:22:10.975 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:22:10.995 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 22:22:11.576 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 22:22:11.841 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 22:22:12.041 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 22:22:12.101 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 1101.3119ms
+SellBooksAuthService | 2024-03-12 22:22:12.105 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:22:12.122 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 1234.6378ms
+SellBooksAuthService | 2024-03-12 22:22:39.817 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 22:22:39.827 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:22:39.828 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 22:22:39.893 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 22:22:40.055 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 22:22:40.056 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 22:22:40.056 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 228.5194ms
+SellBooksAuthService | 2024-03-12 22:22:40.057 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:22:40.057 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 242.3011ms
+SellBooksAuthService | 2024-03-12 22:58:25.884 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+SellBooksAuthService | 2024-03-12 22:58:25.976 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+SellBooksAuthService | 2024-03-12 22:58:26.008 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+SellBooksAuthService | 2024-03-12 22:58:26.041 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+SellBooksAuthService | 2024-03-12 22:58:26.220 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+SellBooksAuthService | 2024-03-12 22:58:26.221 +03:00 [INF] Hosting environment: Development
+SellBooksAuthService | 2024-03-12 22:58:26.222 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\AuthService
+SellBooksAuthService | 2024-03-12 22:58:26.279 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 22:58:26.386 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:58:26.419 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 22:58:26.935 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 22:58:27.228 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 22:58:27.414 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 22:58:27.480 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 1054.3589ms
+SellBooksAuthService | 2024-03-12 22:58:27.484 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 22:58:27.501 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 1226.1027ms
+SellBooksAuthService | 2024-03-12 23:00:40.373 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 23:00:40.381 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:00:40.382 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 23:00:40.447 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 23:00:40.528 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 23:00:40.529 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 23:00:40.530 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 147.7581ms
+SellBooksAuthService | 2024-03-12 23:00:40.530 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:00:40.530 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 157.1029ms
+SellBooksAuthService | 2024-03-12 23:01:02.753 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 23:01:02.755 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:01:02.755 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 23:01:02.770 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 23:01:02.837 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 23:01:02.837 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 23:01:02.838 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 82.6303ms
+SellBooksAuthService | 2024-03-12 23:01:02.838 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:01:02.838 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 85.6252ms
+SellBooksAuthService | 2024-03-12 23:06:29.031 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+SellBooksAuthService | 2024-03-12 23:06:29.138 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+SellBooksAuthService | 2024-03-12 23:06:29.172 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+SellBooksAuthService | 2024-03-12 23:06:29.202 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+SellBooksAuthService | 2024-03-12 23:06:29.424 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+SellBooksAuthService | 2024-03-12 23:06:29.424 +03:00 [INF] Hosting environment: Development
+SellBooksAuthService | 2024-03-12 23:06:29.424 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\AuthService
+SellBooksAuthService | 2024-03-12 23:06:29.515 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 23:06:29.622 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:06:29.662 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 23:06:30.367 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 23:06:30.789 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 23:06:30.934 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 23:06:30.975 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 1309.5629ms
+SellBooksAuthService | 2024-03-12 23:06:30.977 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:06:30.984 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 1485.185ms
+SellBooksAuthService | 2024-03-12 23:06:40.131 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 23:06:40.135 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:06:40.135 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 23:06:40.237 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 23:06:40.337 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 23:06:40.339 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 23:06:40.340 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 204.6654ms
+SellBooksAuthService | 2024-03-12 23:06:40.340 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:06:40.341 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 210.129ms
+SellBooksAuthService | 2024-03-12 23:07:08.209 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44382/api/auth/login - application/json; charset=utf-8 53
+SellBooksAuthService | 2024-03-12 23:07:08.211 +03:00 [INF] Executing endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:07:08.211 +03:00 [INF] Route matched with {action = "Login", controller = "AuthAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SellBooks.Models.DTO.LoginRequestDto) on controller SellBooks.Controllers.AuthAPIController (SellBooksAuthService).
+SellBooksAuthService | 2024-03-12 23:07:08.226 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[SurName], [a].[TwoFactorEnabled], [a].[UserName], [a].[UserStatus]
+FROM [AspNetUsers] AS [a]
+WHERE LOWER([a].[UserName]) = @__ToLower_0
+SellBooksAuthService | 2024-03-12 23:07:08.319 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+SellBooksAuthService | 2024-03-12 23:07:08.320 +03:00 [INF] Executing OkObjectResult, writing value of type 'SellBooks.Models.DTO.ResponseDto'.
+SellBooksAuthService | 2024-03-12 23:07:08.320 +03:00 [INF] Executed action SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService) in 108.5045ms
+SellBooksAuthService | 2024-03-12 23:07:08.320 +03:00 [INF] Executed endpoint 'SellBooks.Controllers.AuthAPIController.Login (SellBooksAuthService)'
+SellBooksAuthService | 2024-03-12 23:07:08.320 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44382/api/auth/login - 200 null application/json; charset=utf-8 111.4516ms

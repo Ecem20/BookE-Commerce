@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ProductDto>
+
+<div class="container my-5">
+    @if (!string.IsNullOrEmpty(TempData["success"] as string))
+    {
+        <div id="errorAlert" class="alert alert-danger" role="alert">
+            @TempData["success"]
+        </div>
+    }
+
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-white">Book List</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="BookCreate" class="btn btn-outline-primary"><i class="bi bi-plus-square"></i> Create New Book</a>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>StockQuantity</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>ISBN No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProductTitle</td>
+                        <td>@item.Categories?.CategoryName</td>
+                        <td>@(item.ProductPrice.ToString("c"))</td>
+                        <td>@item.ProductStockQuantity</td>
+                        <td>@item.BookAuthor</td>
+                        <td>@item.BookPublisher</td>
+                        <td>@item.ISBNNumber</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-success" asp-action="BookEdit" asp-route-bookId="@item.ProductId">Update</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="btn btn-danger" asp-action="BookDelete" asp-route-bookId="@item.ProductId">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Pagination -->
+<div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(i == ViewBag.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("BookIndex", new { pageSize = ViewBag.PageSize, pageNumber = i })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+
+@section Scripts {
+    <script>
+        setTimeout(function () {
+            var errorAlert = document.getElementById('errorAlert');
+            if (errorAlert) {
+                errorAlert.remove();
+            }
+        }, 3000);
+    </script>
+}

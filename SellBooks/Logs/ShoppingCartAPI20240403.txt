@@ -1,0 +1,479 @@
+ShoppingCartAPI | 2024-04-03 11:10:42.869 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+ShoppingCartAPI | 2024-04-03 11:10:43.044 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+ShoppingCartAPI | 2024-04-03 11:10:43.218 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+ShoppingCartAPI | 2024-04-03 11:10:43.248 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+ShoppingCartAPI | 2024-04-03 11:10:43.591 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+ShoppingCartAPI | 2024-04-03 11:10:43.591 +03:00 [INF] Hosting environment: Development
+ShoppingCartAPI | 2024-04-03 11:10:43.591 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI
+ShoppingCartAPI | 2024-04-03 11:10:43.621 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.511 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - 200 null text/html;charset=utf-8 901.4691ms
+ShoppingCartAPI | 2024-04-03 11:10:44.573 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.1838ms
+ShoppingCartAPI | 2024-04-03 11:10:44.591 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.733 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/_vs/browserLink - null null
+ShoppingCartAPI | 2024-04-03 11:10:44.970 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+ShoppingCartAPI | 2024-04-03 11:10:44.972 +03:00 [INF] The file /swagger-ui.css was not modified
+ShoppingCartAPI | 2024-04-03 11:10:44.973 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+ShoppingCartAPI | 2024-04-03 11:10:44.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js - 304 null text/javascript 241.2963ms
+ShoppingCartAPI | 2024-04-03 11:10:44.975 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css - 304 null text/css 394.5584ms
+ShoppingCartAPI | 2024-04-03 11:10:44.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 370.3381ms
+ShoppingCartAPI | 2024-04-03 11:10:45.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/_vs/browserLink - 200 null text/javascript; charset=UTF-8 571.669ms
+ShoppingCartAPI | 2024-04-03 11:10:45.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - null null
+ShoppingCartAPI | 2024-04-03 11:10:45.729 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - null null
+ShoppingCartAPI | 2024-04-03 11:10:45.729 +03:00 [INF] The file /favicon-32x32.png was not modified
+ShoppingCartAPI | 2024-04-03 11:10:45.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - 304 null image/png 1.1565ms
+ShoppingCartAPI | 2024-04-03 11:10:45.961 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 255.1161ms
+ShoppingCartAPI | 2024-04-03 11:20:18.660 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:18.919 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:18.943 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:19.410 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:19.513 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 563.8087ms
+ShoppingCartAPI | 2024-04-03 11:20:19.515 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:19.528 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at lambda_method13(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at ShoppingCartAPI.Controllers.CartAPIController.GetCart(String userId) in C:\Users\10132587\source\repos\SellBooks-Son\ShoppingCartAPI\Controllers\CartAPIController.cs:line 39
+   at lambda_method7(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ShoppingCartAPI | 2024-04-03 11:20:19.610 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 500 null application/json; charset=utf-8 950.408ms
+ShoppingCartAPI | 2024-04-03 11:20:32.972 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - application/json; charset=utf-8 294
+ShoppingCartAPI | 2024-04-03 11:20:32.975 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:32.979 +03:00 [INF] Route matched with {action = "CartUpsert", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] CartUpsert(ShoppingCartAPI.Models.Dto.CartsDto) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:33.108 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+ShoppingCartAPI | 2024-04-03 11:20:33.109 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+ShoppingCartAPI | 2024-04-03 11:20:33.208 +03:00 [INF] Received HTTP response headers after 96.6042ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.208 +03:00 [INF] End processing HTTP request after 102.2039ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.209 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+ShoppingCartAPI | 2024-04-03 11:20:33.209 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+ShoppingCartAPI | 2024-04-03 11:20:33.221 +03:00 [INF] Received HTTP response headers after 12.1505ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.221 +03:00 [INF] End processing HTTP request after 12.3718ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.223 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:33.223 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:33.237 +03:00 [INF] Received HTTP response headers after 13.9728ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.237 +03:00 [INF] End processing HTTP request after 14.2352ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.437 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__cartsDTO_CartHead_UserId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__cartsDTO_CartHead_UserId_0
+ShoppingCartAPI | 2024-04-03 11:20:33.632 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [cartHeads] ([Email], [UserId])
+OUTPUT INSERTED.[CartHeadId]
+VALUES (@p0, @p1);
+ShoppingCartAPI | 2024-04-03 11:20:33.681 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [cartDetail] ([CartHeadId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailId]
+VALUES (@p0, @p1, @p2);
+ShoppingCartAPI | 2024-04-03 11:20:33.702 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:33.702 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:33.724 +03:00 [INF] Received HTTP response headers after 22.3056ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.725 +03:00 [INF] End processing HTTP request after 22.788ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:33.731 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:33.739 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI) in 759.9166ms
+ShoppingCartAPI | 2024-04-03 11:20:33.740 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:33.742 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - 200 null application/json; charset=utf-8 770.2901ms
+ShoppingCartAPI | 2024-04-03 11:20:35.030 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:35.032 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:35.033 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:35.042 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:35.069 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:35.071 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:35.071 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:35.075 +03:00 [INF] Received HTTP response headers after 4.0435ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:35.075 +03:00 [INF] End processing HTTP request after 4.3734ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:35.076 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:35.079 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 45.9594ms
+ShoppingCartAPI | 2024-04-03 11:20:35.079 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:35.079 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 49.573ms
+ShoppingCartAPI | 2024-04-03 11:20:37.979 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - application/json; charset=utf-8 294
+ShoppingCartAPI | 2024-04-03 11:20:37.980 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:37.980 +03:00 [INF] Route matched with {action = "CartUpsert", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] CartUpsert(ShoppingCartAPI.Models.Dto.CartsDto) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:37.981 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+ShoppingCartAPI | 2024-04-03 11:20:37.981 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+ShoppingCartAPI | 2024-04-03 11:20:37.989 +03:00 [INF] Received HTTP response headers after 7.8217ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:37.989 +03:00 [INF] End processing HTTP request after 8.0351ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:37.989 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+ShoppingCartAPI | 2024-04-03 11:20:37.989 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+ShoppingCartAPI | 2024-04-03 11:20:37.994 +03:00 [INF] Received HTTP response headers after 4.6918ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:37.994 +03:00 [INF] End processing HTTP request after 4.8713ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:37.994 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:37.994 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:37.997 +03:00 [INF] Received HTTP response headers after 2.7407ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:37.997 +03:00 [INF] End processing HTTP request after 2.9498ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:38.001 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartsDTO_CartHead_UserId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__cartsDTO_CartHead_UserId_0
+ShoppingCartAPI | 2024-04-03 11:20:38.018 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__First_ProductId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeadId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[ProductId] = @__First_ProductId_0 AND [c].[CartHeadId] = @__cartHeaderFromDb_CartHeadId_1
+ShoppingCartAPI | 2024-04-03 11:20:38.022 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [cartDetail] ([CartHeadId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailId]
+VALUES (@p0, @p1, @p2);
+ShoppingCartAPI | 2024-04-03 11:20:38.023 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:38.023 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:38.031 +03:00 [INF] Received HTTP response headers after 7.6852ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:38.031 +03:00 [INF] End processing HTTP request after 7.9845ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:38.032 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:38.033 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI) in 52.38ms
+ShoppingCartAPI | 2024-04-03 11:20:38.033 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.CartUpsert (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:38.033 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/CartUpsert - 200 null application/json; charset=utf-8 53.638ms
+ShoppingCartAPI | 2024-04-03 11:20:39.376 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:39.377 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:39.377 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:39.379 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:39.380 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:39.380 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:39.380 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:39.384 +03:00 [INF] Received HTTP response headers after 3.3311ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:39.384 +03:00 [INF] End processing HTTP request after 3.4925ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:39.384 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:39.384 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:39.388 +03:00 [INF] Received HTTP response headers after 3.8526ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:39.388 +03:00 [INF] End processing HTTP request after 3.9883ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:39.388 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:39.389 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 11.9054ms
+ShoppingCartAPI | 2024-04-03 11:20:39.389 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:39.389 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 12.8831ms
+ShoppingCartAPI | 2024-04-03 11:20:41.130 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/AddCartItem?cartDetailId=156&countToAdd=1 - null 0
+ShoppingCartAPI | 2024-04-03 11:20:41.131 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:41.136 +03:00 [INF] Route matched with {action = "AddCartItem", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] AddCartItem(Int32, Int32) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:41.147 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__cartDetailId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartDetailId] = @__cartDetailId_0
+ShoppingCartAPI | 2024-04-03 11:20:41.148 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:41.148 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:41.152 +03:00 [INF] Received HTTP response headers after 4.7141ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.153 +03:00 [INF] End processing HTTP request after 4.8921ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.153 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:41.153 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:41.158 +03:00 [INF] Received HTTP response headers after 5.329ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.158 +03:00 [INF] End processing HTTP request after 5.4693ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.164 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [cartDetail] SET [Count] = @p0
+OUTPUT 1
+WHERE [CartDetailId] = @p1;
+ShoppingCartAPI | 2024-04-03 11:20:41.166 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:41.171 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI) in 35.0697ms
+ShoppingCartAPI | 2024-04-03 11:20:41.171 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:41.171 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/AddCartItem?cartDetailId=156&countToAdd=1 - 200 null application/json; charset=utf-8 41.358ms
+ShoppingCartAPI | 2024-04-03 11:20:41.195 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:41.196 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:41.196 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:41.197 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:41.198 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:41.198 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:41.198 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:41.203 +03:00 [INF] Received HTTP response headers after 4.3799ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.203 +03:00 [INF] End processing HTTP request after 4.5247ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.203 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:41.203 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:41.205 +03:00 [INF] Received HTTP response headers after 2.1498ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.205 +03:00 [INF] End processing HTTP request after 2.2398ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:41.206 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:41.206 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 10.0622ms
+ShoppingCartAPI | 2024-04-03 11:20:41.206 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:41.206 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 10.8844ms
+ShoppingCartAPI | 2024-04-03 11:20:42.095 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/AddCartItem?cartDetailId=157&countToAdd=1 - null 0
+ShoppingCartAPI | 2024-04-03 11:20:42.096 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:42.096 +03:00 [INF] Route matched with {action = "AddCartItem", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] AddCartItem(Int32, Int32) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:42.098 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDetailId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartDetailId] = @__cartDetailId_0
+ShoppingCartAPI | 2024-04-03 11:20:42.100 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:42.100 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:42.105 +03:00 [INF] Received HTTP response headers after 5.3688ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.105 +03:00 [INF] End processing HTTP request after 5.9399ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.106 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:42.106 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:42.111 +03:00 [INF] Received HTTP response headers after 4.8027ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.111 +03:00 [INF] End processing HTTP request after 4.9534ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.113 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [cartDetail] SET [Count] = @p0
+OUTPUT 1
+WHERE [CartDetailId] = @p1;
+ShoppingCartAPI | 2024-04-03 11:20:42.113 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:42.113 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI) in 17.7923ms
+ShoppingCartAPI | 2024-04-03 11:20:42.114 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.AddCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:42.114 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/AddCartItem?cartDetailId=157&countToAdd=1 - 200 null application/json; charset=utf-8 18.8569ms
+ShoppingCartAPI | 2024-04-03 11:20:42.138 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:42.139 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:42.139 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:42.141 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:42.142 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:42.142 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:42.142 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:42.145 +03:00 [INF] Received HTTP response headers after 2.9928ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.145 +03:00 [INF] End processing HTTP request after 3.2326ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.146 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:42.146 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:42.149 +03:00 [INF] Received HTTP response headers after 2.7201ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.149 +03:00 [INF] End processing HTTP request after 2.9258ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:42.150 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:42.150 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 11.4202ms
+ShoppingCartAPI | 2024-04-03 11:20:42.150 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:42.151 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 12.5788ms
+ShoppingCartAPI | 2024-04-03 11:20:43.050 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=156&countToRemove=1 - null 0
+ShoppingCartAPI | 2024-04-03 11:20:43.050 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.055 +03:00 [INF] Route matched with {action = "RemoveCartItem", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] RemoveCartItem(Int32, Int32) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:43.059 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDetailId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartDetailId] = @__cartDetailId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.060 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.060 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.063 +03:00 [INF] Received HTTP response headers after 2.7837ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.063 +03:00 [INF] End processing HTTP request after 2.9419ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.063 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:43.063 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:43.070 +03:00 [INF] Received HTTP response headers after 7.1405ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.070 +03:00 [INF] End processing HTTP request after 7.25ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.072 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [cartDetail] SET [Count] = @p0
+OUTPUT 1
+WHERE [CartDetailId] = @p1;
+ShoppingCartAPI | 2024-04-03 11:20:43.072 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:43.072 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI) in 17.1882ms
+ShoppingCartAPI | 2024-04-03 11:20:43.072 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.072 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=156&countToRemove=1 - 200 null application/json; charset=utf-8 23.0758ms
+ShoppingCartAPI | 2024-04-03 11:20:43.093 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:43.093 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.094 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:43.096 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.096 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.096 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.097 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.099 +03:00 [INF] Received HTTP response headers after 2.7972ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.099 +03:00 [INF] End processing HTTP request after 2.942ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.100 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.100 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.103 +03:00 [INF] Received HTTP response headers after 3.5047ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.103 +03:00 [INF] End processing HTTP request after 3.6248ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.104 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:43.104 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 10.3411ms
+ShoppingCartAPI | 2024-04-03 11:20:43.104 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.104 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 11.9075ms
+ShoppingCartAPI | 2024-04-03 11:20:43.945 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=157&countToRemove=1 - null 0
+ShoppingCartAPI | 2024-04-03 11:20:43.945 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.946 +03:00 [INF] Route matched with {action = "RemoveCartItem", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] RemoveCartItem(Int32, Int32) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:43.948 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDetailId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartDetailId] = @__cartDetailId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.950 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.950 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.955 +03:00 [INF] Received HTTP response headers after 4.9712ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.955 +03:00 [INF] End processing HTTP request after 5.4068ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.955 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:43.955 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:43.960 +03:00 [INF] Received HTTP response headers after 4.7193ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.960 +03:00 [INF] End processing HTTP request after 4.8608ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.962 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [cartDetail] SET [Count] = @p0
+OUTPUT 1
+WHERE [CartDetailId] = @p1;
+ShoppingCartAPI | 2024-04-03 11:20:43.962 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:43.963 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI) in 16.9982ms
+ShoppingCartAPI | 2024-04-03 11:20:43.963 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.963 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=157&countToRemove=1 - 200 null application/json; charset=utf-8 18.009ms
+ShoppingCartAPI | 2024-04-03 11:20:43.988 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:43.988 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.988 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:43.990 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.991 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:43.991 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.991 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:43.994 +03:00 [INF] Received HTTP response headers after 2.8501ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.994 +03:00 [INF] End processing HTTP request after 2.9838ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.995 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.995 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:43.997 +03:00 [INF] Received HTTP response headers after 2.6894ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.997 +03:00 [INF] End processing HTTP request after 2.8181ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:43.998 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:43.998 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 10.2624ms
+ShoppingCartAPI | 2024-04-03 11:20:43.999 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:43.999 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 11.339ms
+ShoppingCartAPI | 2024-04-03 11:20:44.976 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=156&countToRemove=1 - null 0
+ShoppingCartAPI | 2024-04-03 11:20:44.977 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:44.977 +03:00 [INF] Route matched with {action = "RemoveCartItem", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] RemoveCartItem(Int32, Int32) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:44.979 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDetailId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartDetailId] = @__cartDetailId_0
+ShoppingCartAPI | 2024-04-03 11:20:44.981 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:44.981 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+ShoppingCartAPI | 2024-04-03 11:20:44.987 +03:00 [INF] Received HTTP response headers after 6.2714ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:44.987 +03:00 [INF] End processing HTTP request after 6.7454ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:44.990 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:44.990 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+ShoppingCartAPI | 2024-04-03 11:20:44.995 +03:00 [INF] Received HTTP response headers after 4.804ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:44.995 +03:00 [INF] End processing HTTP request after 4.9638ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:45.004 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [cartDetail]
+OUTPUT 1
+WHERE [CartDetailId] = @p0;
+ShoppingCartAPI | 2024-04-03 11:20:45.007 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:45.007 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI) in 30.395ms
+ShoppingCartAPI | 2024-04-03 11:20:45.007 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.RemoveCartItem (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:45.008 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/RemoveCartItem?cartDetailId=156&countToRemove=1 - 200 null application/json; charset=utf-8 31.5365ms
+ShoppingCartAPI | 2024-04-03 11:20:45.034 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:45.034 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:45.034 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:45.037 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:45.038 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:45.039 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:45.039 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:45.042 +03:00 [INF] Received HTTP response headers after 3.4698ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:45.042 +03:00 [INF] End processing HTTP request after 3.6428ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:45.043 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:45.043 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 8.5219ms
+ShoppingCartAPI | 2024-04-03 11:20:45.043 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:45.043 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 9.6135ms
+ShoppingCartAPI | 2024-04-03 11:20:47.198 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:47.199 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:47.200 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:47.203 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:47.203 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:47.204 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:47.204 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:47.206 +03:00 [INF] Received HTTP response headers after 2.6814ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:47.206 +03:00 [INF] End processing HTTP request after 2.7837ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:47.207 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:47.207 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 7.4186ms
+ShoppingCartAPI | 2024-04-03 11:20:47.207 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:47.207 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 9.3305ms
+ShoppingCartAPI | 2024-04-03 11:20:50.227 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - null null
+ShoppingCartAPI | 2024-04-03 11:20:50.229 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:50.230 +03:00 [INF] Route matched with {action = "GetCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] GetCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:50.233 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:50.236 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cart_CartHead_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cart_CartHead_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:50.237 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:50.237 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+ShoppingCartAPI | 2024-04-03 11:20:50.239 +03:00 [INF] Received HTTP response headers after 2.8152ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:50.239 +03:00 [INF] End processing HTTP request after 2.9529ms - 200
+ShoppingCartAPI | 2024-04-03 11:20:50.240 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:50.240 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI) in 10.3991ms
+ShoppingCartAPI | 2024-04-03 11:20:50.240 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.GetCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:50.241 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44373/api/cart/GetCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 13.7228ms
+ShoppingCartAPI | 2024-04-03 11:20:50.723 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc - application/json; charset=utf-8 38
+ShoppingCartAPI | 2024-04-03 11:20:50.724 +03:00 [INF] Executing endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:50.727 +03:00 [INF] Route matched with {action = "ClearCart", controller = "CartAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[ShoppingCartAPI.Models.Dto.ResponseDto] ClearCart(System.String) on controller ShoppingCartAPI.Controllers.CartAPIController (ShoppingCartAPI).
+ShoppingCartAPI | 2024-04-03 11:20:50.734 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CartHeadId], [c].[Email], [c].[UserId]
+FROM [cartHeads] AS [c]
+WHERE [c].[UserId] = @__userId_0
+ShoppingCartAPI | 2024-04-03 11:20:50.743 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__cartHeader_CartHeadId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartDetailId], [c].[CartHeadId], [c].[Count], [c].[ProductId]
+FROM [cartDetail] AS [c]
+WHERE [c].[CartHeadId] = @__cartHeader_CartHeadId_0
+ShoppingCartAPI | 2024-04-03 11:20:50.777 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [cartDetail]
+OUTPUT 1
+WHERE [CartDetailId] = @p0;
+DELETE FROM [cartHeads]
+OUTPUT 1
+WHERE [CartHeadId] = @p1;
+ShoppingCartAPI | 2024-04-03 11:20:50.790 +03:00 [INF] Executing ObjectResult, writing value of type 'ShoppingCartAPI.Models.Dto.ResponseDto'.
+ShoppingCartAPI | 2024-04-03 11:20:50.791 +03:00 [INF] Executed action ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI) in 63.9126ms
+ShoppingCartAPI | 2024-04-03 11:20:50.791 +03:00 [INF] Executed endpoint 'ShoppingCartAPI.Controllers.CartAPIController.ClearCart (ShoppingCartAPI)'
+ShoppingCartAPI | 2024-04-03 11:20:50.791 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc - 200 null application/json; charset=utf-8 67.8227ms

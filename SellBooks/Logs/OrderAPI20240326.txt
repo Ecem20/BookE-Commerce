@@ -1,0 +1,1010 @@
+OrderAPI | 2024-03-26 03:18:51.458 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 03:18:51.561 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 03:18:51.731 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 03:18:51.762 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 03:18:52.478 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 03:18:52.478 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 03:18:52.479 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 03:18:52.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 03:18:53.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 803.844ms
+OrderAPI | 2024-03-26 03:18:53.420 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 03:18:53.578 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 03:18:53.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 117.2176ms
+OrderAPI | 2024-03-26 03:18:54.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 706.5621ms
+OrderAPI | 2024-03-26 03:18:54.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 03:18:54.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 316.2519ms
+OrderAPI | 2024-03-26 03:19:57.177 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - application/json; charset=utf-8 1403
+OrderAPI | 2024-03-26 03:19:57.435 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 03:19:57.450 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] CreateOrder(OrdersAPI.Models.Dto.CartsDto) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:19:57.645 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 03:19:57.646 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 03:19:57.757 +03:00 [INF] Received HTTP response headers after 109.2209ms - 200
+OrderAPI | 2024-03-26 03:19:57.757 +03:00 [INF] End processing HTTP request after 113.7926ms - 200
+OrderAPI | 2024-03-26 03:19:57.758 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 03:19:57.758 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 03:19:57.765 +03:00 [INF] Received HTTP response headers after 6.6383ms - 200
+OrderAPI | 2024-03-26 03:19:57.766 +03:00 [INF] End processing HTTP request after 8.057ms - 200
+OrderAPI | 2024-03-26 03:19:58.035 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orderHeads] ([Address], [Email], [Name], [OrderTotal], [PhoneNumber], [Status], [SurName], [UserId])
+OUTPUT INSERTED.[OrderHeadId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+OrderAPI | 2024-03-26 03:19:58.075 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (DbType = Int32), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [orderDetail] USING (
+VALUES (@p8, @p9, @p10, @p11, @p12, 0),
+(@p13, @p14, @p15, @p16, @p17, 1)) AS i ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice])
+VALUES (i.[BookName], i.[Count], i.[OrderHeadId], i.[ProductId], i.[ProductPrice])
+OUTPUT INSERTED.[OrderDetailId], i._Position;
+OrderAPI | 2024-03-26 03:19:58.093 +03:00 [INF] Start processing HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 03:19:58.093 +03:00 [INF] Sending HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 03:19:58.234 +03:00 [INF] Received HTTP response headers after 141.3312ms - 200
+OrderAPI | 2024-03-26 03:19:58.234 +03:00 [INF] End processing HTTP request after 141.6321ms - 200
+OrderAPI | 2024-03-26 03:19:58.240 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:19:58.269 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI) in 812.8763ms
+OrderAPI | 2024-03-26 03:19:58.270 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 03:19:58.275 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - 200 null application/json; charset=utf-8 1098.4434ms
+OrderAPI | 2024-03-26 03:19:59.547 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 03:19:59.552 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 03:19:59.555 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:19:59.869 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 03:19:59.958 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 03:19:59.974 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:19:59.976 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 420.2828ms
+OrderAPI | 2024-03-26 03:19:59.976 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 03:19:59.976 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 429.8096ms
+OrderAPI | 2024-03-26 03:20:01.209 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - null null
+OrderAPI | 2024-03-26 03:20:01.214 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:01.218 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:01.236 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:20:01.239 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:01.241 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 23.3006ms
+OrderAPI | 2024-03-26 03:20:01.241 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:01.241 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - 200 null application/json; charset=utf-8 32.2347ms
+OrderAPI | 2024-03-26 03:20:02.606 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 03:20:02.607 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:02.607 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:02.627 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 03:20:02.638 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 03:20:02.640 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:02.641 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 33.271ms
+OrderAPI | 2024-03-26 03:20:02.641 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:02.641 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 35.0596ms
+OrderAPI | 2024-03-26 03:20:13.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 03:20:13.476 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:13.477 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:13.486 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 03:20:13.491 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:13.492 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 14.0546ms
+OrderAPI | 2024-03-26 03:20:13.492 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:13.492 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 16.841ms
+OrderAPI | 2024-03-26 03:20:14.723 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - null null
+OrderAPI | 2024-03-26 03:20:14.723 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:14.723 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:14.728 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:20:14.729 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:14.730 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 6.8507ms
+OrderAPI | 2024-03-26 03:20:14.730 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:14.732 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - 200 null application/json; charset=utf-8 9.37ms
+OrderAPI | 2024-03-26 03:20:16.299 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/62 - application/json; charset=utf-8 10
+OrderAPI | 2024-03-26 03:20:16.301 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:16.306 +03:00 [INF] Route matched with {action = "UpdateOrderStatus", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] UpdateOrderStatus(Int32, System.String) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:16.321 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__orderId_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:20:16.331 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [orderHeads] SET [Status] = @p0
+OUTPUT 1
+WHERE [OrderHeadId] = @p1;
+OrderAPI | 2024-03-26 03:20:16.334 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:16.335 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI) in 28.9582ms
+OrderAPI | 2024-03-26 03:20:16.335 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:16.336 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/62 - 200 null application/json; charset=utf-8 36.8147ms
+OrderAPI | 2024-03-26 03:20:16.353 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - null null
+OrderAPI | 2024-03-26 03:20:16.354 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:16.354 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:16.357 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:20:16.358 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:16.358 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 4.1905ms
+OrderAPI | 2024-03-26 03:20:16.358 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:16.358 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - 200 null application/json; charset=utf-8 5.1774ms
+OrderAPI | 2024-03-26 03:20:17.653 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - null null
+OrderAPI | 2024-03-26 03:20:17.654 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:17.654 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:17.658 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:20:17.659 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:17.659 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 5.2312ms
+OrderAPI | 2024-03-26 03:20:17.659 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:17.660 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/62 - 200 null application/json; charset=utf-8 6.527ms
+OrderAPI | 2024-03-26 03:20:19.467 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 03:20:19.469 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:19.469 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:20:19.473 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 03:20:19.474 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 03:20:19.475 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 5.9695ms
+OrderAPI | 2024-03-26 03:20:19.475 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:20:19.475 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 9.038ms
+OrderAPI | 2024-03-26 03:27:27.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/api/order/GetOrder/1 - null null
+OrderAPI | 2024-03-26 03:27:27.522 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:27:27.522 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 03:27:27.639 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 03:27:30.036 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 2513.5695ms
+OrderAPI | 2024-03-26 03:27:30.036 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 03:27:30.039 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at lambda_method218(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at OrdersAPI.Controllers.OrderAPIController.Get(Int32 id) in C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI\Controllers\OrderAPIController.cs:line 99
+   at lambda_method208(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+OrderAPI | 2024-03-26 03:27:30.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/api/order/GetOrder/1 - 500 null application/json; charset=utf-8 2567.7196ms
+OrderAPI | 2024-03-26 03:32:19.114 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 03:32:19.222 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 03:32:19.301 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 03:32:19.332 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 03:32:19.552 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 03:32:19.552 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 03:32:19.553 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 03:32:19.576 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 03:32:20.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 976.3131ms
+OrderAPI | 2024-03-26 03:32:20.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 03:32:20.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 03:32:20.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.1715ms
+OrderAPI | 2024-03-26 03:32:20.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 236.5121ms
+OrderAPI | 2024-03-26 03:32:21.189 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 03:32:21.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 248.5969ms
+OrderAPI | 2024-03-26 03:42:09.243 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 03:42:09.395 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 03:42:09.456 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 03:42:09.488 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 03:42:09.705 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 03:42:09.706 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 03:42:09.706 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 03:42:09.725 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 03:42:13.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 3780.3445ms
+OrderAPI | 2024-03-26 03:42:14.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 03:42:14.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 8.6454ms
+OrderAPI | 2024-03-26 03:42:14.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 03:42:27.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12772.8246ms
+OrderAPI | 2024-03-26 03:42:27.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 03:42:27.965 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.0965ms
+OrderAPI | 2024-03-26 03:50:54.624 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 03:50:54.739 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 03:50:54.783 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 03:50:54.806 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 03:50:55.125 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 03:50:55.126 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 03:50:55.126 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 03:50:55.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 03:50:55.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 615.4314ms
+OrderAPI | 2024-03-26 03:50:55.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 03:50:55.896 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 03:50:55.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 9.003ms
+OrderAPI | 2024-03-26 03:50:56.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.1936ms
+OrderAPI | 2024-03-26 03:50:56.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 03:50:56.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 328.785ms
+OrderAPI | 2024-03-26 04:00:16.879 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 04:00:16.981 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 04:00:17.024 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 04:00:17.047 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 04:00:17.450 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 04:00:17.450 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 04:00:17.450 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 04:00:17.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 04:00:18.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 728.1425ms
+OrderAPI | 2024-03-26 04:00:18.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 04:00:18.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 04:00:18.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 32.841ms
+OrderAPI | 2024-03-26 04:00:18.383 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.3826ms
+OrderAPI | 2024-03-26 04:00:18.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 04:00:18.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 344.3117ms
+OrderAPI | 2024-03-26 04:04:17.397 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:04:17.769 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:04:17.806 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:04:18.390 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:04:18.532 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:04:18.565 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 750.925ms
+OrderAPI | 2024-03-26 04:04:18.566 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:04:18.573 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 1176.1888ms
+OrderAPI | 2024-03-26 04:04:57.716 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - application/json; charset=utf-8 1405
+OrderAPI | 2024-03-26 04:04:57.723 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 04:04:57.733 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] CreateOrder(OrdersAPI.Models.Dto.CartsDto) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:04:57.987 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 04:04:57.989 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 04:04:58.102 +03:00 [INF] Received HTTP response headers after 109.2684ms - 200
+OrderAPI | 2024-03-26 04:04:58.103 +03:00 [INF] End processing HTTP request after 118.3028ms - 200
+OrderAPI | 2024-03-26 04:04:58.105 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 04:04:58.105 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 04:04:58.111 +03:00 [INF] Received HTTP response headers after 6.5997ms - 200
+OrderAPI | 2024-03-26 04:04:58.112 +03:00 [INF] End processing HTTP request after 7.1554ms - 200
+OrderAPI | 2024-03-26 04:04:58.533 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orderHeads] ([Address], [Email], [Name], [OrderTotal], [PhoneNumber], [Status], [SurName], [UserId])
+OUTPUT INSERTED.[OrderHeadId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+OrderAPI | 2024-03-26 04:04:58.585 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (DbType = Int32), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [orderDetail] USING (
+VALUES (@p8, @p9, @p10, @p11, @p12, 0),
+(@p13, @p14, @p15, @p16, @p17, 1)) AS i ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice])
+VALUES (i.[BookName], i.[Count], i.[OrderHeadId], i.[ProductId], i.[ProductPrice])
+OUTPUT INSERTED.[OrderDetailId], i._Position;
+OrderAPI | 2024-03-26 04:04:58.611 +03:00 [INF] Start processing HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 04:04:58.611 +03:00 [INF] Sending HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 04:04:58.753 +03:00 [INF] Received HTTP response headers after 141.4463ms - 200
+OrderAPI | 2024-03-26 04:04:58.753 +03:00 [INF] End processing HTTP request after 141.8331ms - 200
+OrderAPI | 2024-03-26 04:04:58.755 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:04:58.763 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI) in 1029.8577ms
+OrderAPI | 2024-03-26 04:04:58.765 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 04:04:58.769 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - 200 null application/json; charset=utf-8 1052.3332ms
+OrderAPI | 2024-03-26 04:05:00.689 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:05:00.699 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:00.702 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:00.822 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 04:05:00.954 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:05:00.978 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:00.979 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 276.205ms
+OrderAPI | 2024-03-26 04:05:00.979 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:00.979 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 290.2264ms
+OrderAPI | 2024-03-26 04:05:02.304 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - null null
+OrderAPI | 2024-03-26 04:05:02.307 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:02.310 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:02.336 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 04:05:02.340 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:02.341 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 30.5829ms
+OrderAPI | 2024-03-26 04:05:02.341 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:02.342 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - 200 null application/json; charset=utf-8 37.6415ms
+OrderAPI | 2024-03-26 04:05:04.664 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:05:04.667 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:04.668 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:04.673 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 04:05:04.676 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:05:04.679 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:04.680 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 12.2157ms
+OrderAPI | 2024-03-26 04:05:04.681 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:04.682 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 18.0298ms
+OrderAPI | 2024-03-26 04:05:16.574 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:05:16.576 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:16.576 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:16.580 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:05:16.582 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:16.584 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 7.506ms
+OrderAPI | 2024-03-26 04:05:16.584 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:16.585 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 10.9777ms
+OrderAPI | 2024-03-26 04:05:17.854 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - null null
+OrderAPI | 2024-03-26 04:05:17.856 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:17.856 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:17.858 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 04:05:17.858 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:17.859 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 3.1163ms
+OrderAPI | 2024-03-26 04:05:17.859 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:17.859 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - 200 null application/json; charset=utf-8 5.2843ms
+OrderAPI | 2024-03-26 04:05:20.216 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/63 - application/json; charset=utf-8 10
+OrderAPI | 2024-03-26 04:05:20.217 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.224 +03:00 [INF] Route matched with {action = "UpdateOrderStatus", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] UpdateOrderStatus(Int32, System.String) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:20.243 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__orderId_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 04:05:20.250 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/28
+OrderAPI | 2024-03-26 04:05:20.250 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/28
+OrderAPI | 2024-03-26 04:05:20.278 +03:00 [INF] Received HTTP response headers after 27.6023ms - 200
+OrderAPI | 2024-03-26 04:05:20.279 +03:00 [INF] End processing HTTP request after 28.443ms - 200
+OrderAPI | 2024-03-26 04:05:20.403 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+OrderAPI | 2024-03-26 04:05:20.403 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+OrderAPI | 2024-03-26 04:05:20.414 +03:00 [INF] Received HTTP response headers after 11.0051ms - 200
+OrderAPI | 2024-03-26 04:05:20.414 +03:00 [INF] End processing HTTP request after 11.2742ms - 200
+OrderAPI | 2024-03-26 04:05:20.415 +03:00 [INF] Start processing HTTP request GET https://localhost:44386/api/book/29
+OrderAPI | 2024-03-26 04:05:20.415 +03:00 [INF] Sending HTTP request GET https://localhost:44386/api/book/29
+OrderAPI | 2024-03-26 04:05:20.420 +03:00 [INF] Received HTTP response headers after 5.5717ms - 200
+OrderAPI | 2024-03-26 04:05:20.421 +03:00 [INF] End processing HTTP request after 5.9361ms - 200
+OrderAPI | 2024-03-26 04:05:20.421 +03:00 [INF] Start processing HTTP request POST https://localhost:44386/api/book/Update
+OrderAPI | 2024-03-26 04:05:20.422 +03:00 [INF] Sending HTTP request POST https://localhost:44386/api/book/Update
+OrderAPI | 2024-03-26 04:05:20.430 +03:00 [INF] Received HTTP response headers after 8.389ms - 200
+OrderAPI | 2024-03-26 04:05:20.431 +03:00 [INF] End processing HTTP request after 9.1589ms - 200
+OrderAPI | 2024-03-26 04:05:20.452 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [orderHeads] SET [Status] = @p0
+OUTPUT 1
+WHERE [OrderHeadId] = @p1;
+OrderAPI | 2024-03-26 04:05:20.453 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:20.454 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI) in 229.5031ms
+OrderAPI | 2024-03-26 04:05:20.454 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.455 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/63 - 200 null application/json; charset=utf-8 239.1907ms
+OrderAPI | 2024-03-26 04:05:20.469 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - null null
+OrderAPI | 2024-03-26 04:05:20.470 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.470 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:20.472 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 04:05:20.473 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:20.473 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 3.1398ms
+OrderAPI | 2024-03-26 04:05:20.473 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.474 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - 200 null application/json; charset=utf-8 4.88ms
+OrderAPI | 2024-03-26 04:05:20.711 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - null null
+OrderAPI | 2024-03-26 04:05:20.712 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.712 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:20.716 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 04:05:20.717 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:20.720 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 7.5377ms
+OrderAPI | 2024-03-26 04:05:20.720 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:20.721 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/63 - 200 null application/json; charset=utf-8 9.3336ms
+OrderAPI | 2024-03-26 04:05:22.429 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:05:22.429 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:22.430 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:22.434 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:05:22.435 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:22.436 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 6.1045ms
+OrderAPI | 2024-03-26 04:05:22.436 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:22.436 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 7.5941ms
+OrderAPI | 2024-03-26 04:05:32.743 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 04:05:32.744 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:32.744 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 04:05:32.751 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 04:05:32.752 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 04:05:32.753 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 8.712ms
+OrderAPI | 2024-03-26 04:05:32.753 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 04:05:32.754 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 10.7156ms
+OrderAPI | 2024-03-26 20:14:06.328 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 20:14:06.551 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 20:14:06.690 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 20:14:06.747 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 20:14:07.131 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 20:14:07.132 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 20:14:07.132 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 20:14:07.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 20:14:08.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1134.108ms
+OrderAPI | 2024-03-26 20:14:08.373 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 20:14:08.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.0951ms
+OrderAPI | 2024-03-26 20:14:08.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 20:14:08.482 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.6811ms
+OrderAPI | 2024-03-26 20:14:08.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 20:14:08.925 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 321.4477ms
+OrderAPI | 2024-03-26 20:19:28.390 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 20:19:28.734 +03:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 20:19:29.391 +03:00 [INF] Executed DbCommand (361ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 20:19:29.477 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 20:19:30.657 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 20:19:30.660 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 20:19:30.660 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 20:19:30.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 20:19:32.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1674.5461ms
+OrderAPI | 2024-03-26 20:19:32.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 20:19:32.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 20:19:32.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 56.8731ms
+OrderAPI | 2024-03-26 20:19:33.283 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 516.7907ms
+OrderAPI | 2024-03-26 20:19:33.899 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 20:19:34.337 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 437.5231ms
+OrderAPI | 2024-03-26 20:27:04.411 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 20:27:04.607 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 20:27:04.902 +03:00 [INF] Executed DbCommand (237ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 20:27:04.954 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 20:27:05.990 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 20:27:05.992 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 20:27:05.992 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 20:27:06.205 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 20:27:07.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1226.7661ms
+OrderAPI | 2024-03-26 20:27:07.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 20:27:07.511 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 14.082ms
+OrderAPI | 2024-03-26 20:27:07.521 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 20:27:07.637 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 130.199ms
+OrderAPI | 2024-03-26 20:27:07.872 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 20:27:08.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 411.8419ms
+OrderAPI | 2024-03-26 20:35:16.196 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 20:35:16.434 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 20:35:16.546 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 20:35:16.616 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 20:35:17.203 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 20:35:17.205 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 20:35:17.205 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 20:35:17.244 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 20:35:18.270 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 979.6706ms
+OrderAPI | 2024-03-26 20:35:18.765 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 20:35:18.771 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 20:35:18.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 60.6192ms
+OrderAPI | 2024-03-26 20:35:19.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 630.5875ms
+OrderAPI | 2024-03-26 20:35:20.046 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 20:35:20.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 687.386ms
+OrderAPI | 2024-03-26 20:58:21.258 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 20:58:21.491 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 20:58:21.608 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 20:58:21.671 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 20:58:22.065 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 20:58:22.071 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 20:58:22.072 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 20:58:22.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 20:58:29.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 7764.9131ms
+OrderAPI | 2024-03-26 20:58:32.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 20:58:32.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 20:58:32.448 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 21.0151ms
+OrderAPI | 2024-03-26 20:58:37.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5016.1207ms
+OrderAPI | 2024-03-26 20:58:37.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 20:58:38.690 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1213.8035ms
+OrderAPI | 2024-03-26 21:03:48.834 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:03:49.097 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:03:49.764 +03:00 [INF] Executed DbCommand (422ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:03:49.833 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:03:51.920 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:03:51.921 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:03:51.921 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:03:52.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:03:53.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1261.1646ms
+OrderAPI | 2024-03-26 21:03:53.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:03:53.484 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 14.3925ms
+OrderAPI | 2024-03-26 21:03:53.502 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:03:53.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 207.392ms
+OrderAPI | 2024-03-26 21:03:53.886 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:03:54.494 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 607.6274ms
+OrderAPI | 2024-03-26 21:11:14.483 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:11:14.636 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:11:14.717 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:11:14.742 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:11:14.966 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:11:14.967 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:11:14.967 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:11:14.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:11:15.476 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 477.3328ms
+OrderAPI | 2024-03-26 21:11:15.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:11:15.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:11:15.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 9.0384ms
+OrderAPI | 2024-03-26 21:11:15.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 218.1977ms
+OrderAPI | 2024-03-26 21:11:15.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:11:16.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.5296ms
+OrderAPI | 2024-03-26 21:13:23.726 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:13:23.974 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:13:24.136 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:13:24.215 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:13:24.695 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:13:24.697 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:13:24.697 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:13:24.802 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:13:26.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1533.0061ms
+OrderAPI | 2024-03-26 21:13:26.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:13:26.517 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:13:26.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 23.1442ms
+OrderAPI | 2024-03-26 21:13:26.824 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 315.41ms
+OrderAPI | 2024-03-26 21:13:26.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:13:27.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 399.1275ms
+OrderAPI | 2024-03-26 21:20:45.311 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:20:45.469 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:20:45.528 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:20:45.564 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:20:45.900 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:20:45.901 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:20:45.901 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:20:45.961 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:20:46.881 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 952.2829ms
+OrderAPI | 2024-03-26 21:20:47.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:20:47.056 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:20:47.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 15.3255ms
+OrderAPI | 2024-03-26 21:20:47.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 303.059ms
+OrderAPI | 2024-03-26 21:20:47.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:20:47.787 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 330.4301ms
+OrderAPI | 2024-03-26 21:22:09.689 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:22:09.847 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:22:09.924 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:22:09.964 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:22:10.468 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:22:10.470 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:22:10.470 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:22:10.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:22:12.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1512.3508ms
+OrderAPI | 2024-03-26 21:22:12.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:22:12.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:22:12.233 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 16.2518ms
+OrderAPI | 2024-03-26 21:22:12.734 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 564.6216ms
+OrderAPI | 2024-03-26 21:22:12.827 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:22:13.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 420.8844ms
+OrderAPI | 2024-03-26 21:30:59.953 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:31:00.126 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:31:00.228 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:31:00.267 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:31:00.791 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:31:00.793 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:31:00.793 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:31:00.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:31:01.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 765.5393ms
+OrderAPI | 2024-03-26 21:31:01.812 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:31:01.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 30.8845ms
+OrderAPI | 2024-03-26 21:31:01.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:31:02.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 305.7626ms
+OrderAPI | 2024-03-26 21:31:02.512 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:31:03.008 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 496.2132ms
+OrderAPI | 2024-03-26 21:44:59.744 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:45:00.060 +03:00 [INF] Executed DbCommand (121ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:45:00.311 +03:00 [INF] Executed DbCommand (126ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:45:00.401 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:45:01.783 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:45:01.784 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:45:01.784 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:45:01.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:45:02.973 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1156.0217ms
+OrderAPI | 2024-03-26 21:45:03.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:45:03.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 76.6709ms
+OrderAPI | 2024-03-26 21:45:03.362 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:45:03.560 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.5371ms
+OrderAPI | 2024-03-26 21:45:03.875 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:45:04.259 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 383.5333ms
+OrderAPI | 2024-03-26 21:48:14.204 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:48:14.412 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:48:14.549 +03:00 [INF] Executed DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:48:14.613 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:48:15.175 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:48:15.176 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:48:15.176 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:48:15.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/index.html - null null
+OrderAPI | 2024-03-26 21:48:16.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/index.html - 200 null text/html;charset=utf-8 1722.9859ms
+OrderAPI | 2024-03-26 21:48:17.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_vs/browserLink - null null
+OrderAPI | 2024-03-26 21:48:17.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - null null
+OrderAPI | 2024-03-26 21:48:17.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 4.8682ms
+OrderAPI | 2024-03-26 21:48:17.354 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/_vs/browserLink - 200 null text/javascript; charset=UTF-8 207.2175ms
+OrderAPI | 2024-03-26 21:48:17.529 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - null null
+OrderAPI | 2024-03-26 21:48:17.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44300/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 407.7142ms
+OrderAPI | 2024-03-26 21:53:01.582 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+OrderAPI | 2024-03-26 21:53:01.718 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+OrderAPI | 2024-03-26 21:53:01.761 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+OrderAPI | 2024-03-26 21:53:01.792 +03:00 [INF] User profile is available. Using 'C:\Users\10132587\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+OrderAPI | 2024-03-26 21:53:02.004 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+OrderAPI | 2024-03-26 21:53:02.005 +03:00 [INF] Hosting environment: Development
+OrderAPI | 2024-03-26 21:53:02.005 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\OrdersAPI
+OrderAPI | 2024-03-26 21:53:02.032 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - application/json; charset=utf-8 1400
+OrderAPI | 2024-03-26 21:53:02.415 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:02.440 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] CreateOrder(OrdersAPI.Models.Dto.CartsDto) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:02.786 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 21:53:02.789 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkuser?userId=f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 21:53:03.138 +03:00 [INF] Received HTTP response headers after 344.1257ms - 200
+OrderAPI | 2024-03-26 21:53:03.141 +03:00 [INF] End processing HTTP request after 362.5131ms - 200
+OrderAPI | 2024-03-26 21:53:03.146 +03:00 [INF] Start processing HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 21:53:03.146 +03:00 [INF] Sending HTTP request GET https://localhost:44382/api/auth/checkmail?userId=f167141a-c006-4abf-97ee-c9da662d96cc&email=ecemcansin2014@gmail.com
+OrderAPI | 2024-03-26 21:53:03.173 +03:00 [INF] Received HTTP response headers after 26.5908ms - 200
+OrderAPI | 2024-03-26 21:53:03.173 +03:00 [INF] End processing HTTP request after 27.2271ms - 200
+OrderAPI | 2024-03-26 21:53:03.681 +03:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Double), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orderHeads] ([Address], [Email], [Name], [OrderTotal], [PhoneNumber], [Status], [SurName], [UserId])
+OUTPUT INSERTED.[OrderHeadId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+OrderAPI | 2024-03-26 21:53:03.757 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (DbType = Int32), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [orderDetail] USING (
+VALUES (@p8, @p9, @p10, @p11, @p12, 0),
+(@p13, @p14, @p15, @p16, @p17, 1)) AS i ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BookName], [Count], [OrderHeadId], [ProductId], [ProductPrice])
+VALUES (i.[BookName], i.[Count], i.[OrderHeadId], i.[ProductId], i.[ProductPrice])
+OUTPUT INSERTED.[OrderDetailId], i._Position;
+OrderAPI | 2024-03-26 21:53:03.801 +03:00 [INF] Start processing HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 21:53:03.801 +03:00 [INF] Sending HTTP request POST https://localhost:44373/api/cart/ClearCart/f167141a-c006-4abf-97ee-c9da662d96cc
+OrderAPI | 2024-03-26 21:53:03.935 +03:00 [INF] Received HTTP response headers after 133.2277ms - 200
+OrderAPI | 2024-03-26 21:53:03.935 +03:00 [INF] End processing HTTP request after 133.6993ms - 200
+OrderAPI | 2024-03-26 21:53:03.942 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:03.995 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI) in 1550.3894ms
+OrderAPI | 2024-03-26 21:53:03.996 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.CreateOrder (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:04.009 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/CreateOrder - 200 null application/json; charset=utf-8 1989.8639ms
+OrderAPI | 2024-03-26 21:53:05.223 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 21:53:05.234 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:05.238 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:05.783 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 21:53:05.929 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 21:53:05.943 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:05.948 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 708.947ms
+OrderAPI | 2024-03-26 21:53:05.948 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:05.949 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 726.1428ms
+OrderAPI | 2024-03-26 21:53:07.789 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - null null
+OrderAPI | 2024-03-26 21:53:07.795 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:07.798 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:07.828 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 21:53:07.834 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:07.836 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 37.8724ms
+OrderAPI | 2024-03-26 21:53:07.837 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:07.838 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - 200 null application/json; charset=utf-8 48.195ms
+OrderAPI | 2024-03-26 21:53:13.272 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 21:53:13.272 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:13.273 +03:00 [INF] Route matched with {action = "GetOrderById", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto GetOrderById(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:13.279 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [orderHeads] AS [o]
+WHERE [o].[UserId] = @__userId_0
+OrderAPI | 2024-03-26 21:53:13.282 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[UserId] = @__userId_0
+    ORDER BY [o].[OrderHeadId] DESC
+    OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 21:53:13.286 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:13.287 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI) in 14.4416ms
+OrderAPI | 2024-03-26 21:53:13.287 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.GetOrderById (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:13.288 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrderById/f167141a-c006-4abf-97ee-c9da662d96cc?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 16.4037ms
+OrderAPI | 2024-03-26 21:53:25.384 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 21:53:25.389 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:25.391 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:25.401 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 21:53:25.408 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:25.409 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 17.7888ms
+OrderAPI | 2024-03-26 21:53:25.409 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:25.410 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 25.5973ms
+OrderAPI | 2024-03-26 21:53:26.841 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - null null
+OrderAPI | 2024-03-26 21:53:26.842 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:26.842 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:26.846 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 21:53:26.847 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:26.848 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 5.1298ms
+OrderAPI | 2024-03-26 21:53:26.848 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:26.848 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - 200 null application/json; charset=utf-8 7.1277ms
+OrderAPI | 2024-03-26 21:53:28.249 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/64 - application/json; charset=utf-8 10
+OrderAPI | 2024-03-26 21:53:28.250 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:28.255 +03:00 [INF] Route matched with {action = "UpdateOrderStatus", controller = "OrderAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[OrdersAPI.Models.Dto.ResponseDto] UpdateOrderStatus(Int32, System.String) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:28.278 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__orderId_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 21:53:28.294 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [orderHeads] SET [Status] = @p0
+OUTPUT 1
+WHERE [OrderHeadId] = @p1;
+OrderAPI | 2024-03-26 21:53:28.295 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:28.296 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI) in 40.584ms
+OrderAPI | 2024-03-26 21:53:28.296 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.UpdateOrderStatus (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:28.296 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44300/api/order/UpdateOrderStatus/64 - 200 null application/json; charset=utf-8 47.331ms
+OrderAPI | 2024-03-26 21:53:28.307 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - null null
+OrderAPI | 2024-03-26 21:53:28.307 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:28.308 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:28.309 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 21:53:28.310 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:28.310 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 2.519ms
+OrderAPI | 2024-03-26 21:53:28.310 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:28.310 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - 200 null application/json; charset=utf-8 3.5131ms
+OrderAPI | 2024-03-26 21:53:35.126 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - null null
+OrderAPI | 2024-03-26 21:53:35.127 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:35.127 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:35.130 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[OrderHeadId], [t].[Address], [t].[Email], [t].[Name], [t].[OrderTotal], [t].[PhoneNumber], [t].[Status], [t].[SurName], [t].[UserId], [o0].[OrderDetailId], [o0].[BookName], [o0].[Count], [o0].[OrderHeadId], [o0].[ProductId], [o0].[ProductPrice]
+FROM (
+    SELECT TOP(1) [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+    FROM [orderHeads] AS [o]
+    WHERE [o].[OrderHeadId] = @__id_0
+) AS [t]
+LEFT JOIN [orderDetail] AS [o0] ON [t].[OrderHeadId] = [o0].[OrderHeadId]
+ORDER BY [t].[OrderHeadId]
+OrderAPI | 2024-03-26 21:53:35.130 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:35.132 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 4.6303ms
+OrderAPI | 2024-03-26 21:53:35.132 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:35.132 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrder/64 - 200 null application/json; charset=utf-8 6.6606ms
+OrderAPI | 2024-03-26 21:53:36.317 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - null null
+OrderAPI | 2024-03-26 21:53:36.319 +03:00 [INF] Executing endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:36.320 +03:00 [INF] Route matched with {action = "Get", controller = "OrderAPI"}. Executing controller action with signature OrdersAPI.Models.Dto.ResponseDto Get(System.String, Int32, Int32) on controller OrdersAPI.Controllers.OrderAPIController (OrdersAPI).
+OrderAPI | 2024-03-26 21:53:36.322 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderHeadId], [o].[Address], [o].[Email], [o].[Name], [o].[OrderTotal], [o].[PhoneNumber], [o].[Status], [o].[SurName], [o].[UserId]
+FROM [orderHeads] AS [o]
+ORDER BY [o].[OrderHeadId] DESC
+OrderAPI | 2024-03-26 21:53:36.323 +03:00 [INF] Executing ObjectResult, writing value of type 'OrdersAPI.Models.Dto.ResponseDto'.
+OrderAPI | 2024-03-26 21:53:36.324 +03:00 [INF] Executed action OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI) in 4.0168ms
+OrderAPI | 2024-03-26 21:53:36.324 +03:00 [INF] Executed endpoint 'OrdersAPI.Controllers.OrderAPIController.Get (OrdersAPI)'
+OrderAPI | 2024-03-26 21:53:36.324 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44300/api/order/GetOrders/?pageSize=4&pageNumber=1 - 200 null application/json; charset=utf-8 7.2876ms

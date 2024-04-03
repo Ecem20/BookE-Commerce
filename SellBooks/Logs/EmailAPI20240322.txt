@@ -1,0 +1,16 @@
+EmailAPI | 2024-03-22 02:21:01.664 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-03-22 02:21:01.678 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44391/api/email/send - application/json; charset=utf-8 126
+EmailAPI | 2024-03-22 02:21:01.722 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-03-22 02:21:01.722 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son - apitarafıvalidasyontamam\EmailAPI
+EmailAPI | 2024-03-22 02:21:01.824 +03:00 [INF] Executing endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-22 02:21:01.862 +03:00 [INF] Route matched with {action = "SendEmail", controller = "EmailAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(EmailAPI.Models.Dto.EmailDto) on controller EmailAPI.Controllers.EmailAPIController (EmailAPI).
+EmailAPI | 2024-03-22 02:21:03.397 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [emails] ([Body], [ReceiverEmail], [Subject])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+EmailAPI | 2024-03-22 02:21:03.630 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+EmailAPI | 2024-03-22 02:21:03.672 +03:00 [INF] Executed action EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI) in 1802.9075ms
+EmailAPI | 2024-03-22 02:21:03.675 +03:00 [INF] Executed endpoint 'EmailAPI.Controllers.EmailAPIController.SendEmail (EmailAPI)'
+EmailAPI | 2024-03-22 02:21:03.692 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44391/api/email/send - 200 null application/json; charset=utf-8 2023.8549ms

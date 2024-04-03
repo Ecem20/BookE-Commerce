@@ -1,0 +1,41 @@
+﻿@model OrderHeadDto
+@using MVCWeb.Utility
+<form method="post">
+    <br />
+    <input asp-for="OrderHeadId" hidden />
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-dark text-light ml-0">
+                <div class="container row">
+                    <div class="col-12 d-none d-md-block col-md-6 pb-1 text-warning h3 text-center">
+                        Order Summary
+                    </div>
+                    <div class="col-12 col-md-4 offset-md-2 text-md-end mt-2">
+                        <a asp-action="OrderCustomer" class="btn btn-warning form-control btn-sm">Back to Orders</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container rounded p-2">
+                    <ul class="list-group mb-3">
+                        @foreach (var detail in Model.OrderDetail)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div class="row container">
+                                    <div class="col-8">
+                                        <h6 class="my-0 text-primary">@detail.BookName</h6>
+                                        <small class="text-muted">Price : @detail.ProductPrice.ToString("C", new System.Globalization.CultureInfo("tr-TR"))</small><br />
+                                        <small class="text-muted">Quantity : @detail.Count</small>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <p class="text-success">@((detail.Count * detail.ProductPrice).ToString("C", new System.Globalization.CultureInfo("tr-TR")))</p>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

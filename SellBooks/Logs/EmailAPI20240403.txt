@@ -1,0 +1,11 @@
+EmailAPI | 2024-04-03 11:10:40.664 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+EmailAPI | 2024-04-03 11:10:40.679 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+EmailAPI | 2024-04-03 11:10:40.730 +03:00 [INF] Hosting environment: Development
+EmailAPI | 2024-04-03 11:10:40.732 +03:00 [INF] Content root path: C:\Users\10132587\source\repos\SellBooks-Son\EmailAPI
+EmailAPI | 2024-04-03 11:10:41.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 592.3556ms
+EmailAPI | 2024-04-03 11:10:42.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - null null
+EmailAPI | 2024-04-03 11:10:42.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - null null
+EmailAPI | 2024-04-03 11:10:42.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 72.9085ms
+EmailAPI | 2024-04-03 11:10:42.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - 200 null text/javascript; charset=UTF-8 211.0788ms
+EmailAPI | 2024-04-03 11:10:42.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+EmailAPI | 2024-04-03 11:10:42.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 159.9477ms
